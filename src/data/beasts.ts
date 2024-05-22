@@ -98,7 +98,7 @@ const beasts = [
   },
   {
     "name": "Axe Beak",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/5/5b/Axe_beak-5e.jpg/revision/latest?cb=20200917222507",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/5/5b/Axe_beak-5e.jpg",
     "size": "Large",
     "hp": 19,
     "roll": "3d10 + 3",
@@ -225,7 +225,7 @@ const beasts = [
   },
   {
     "name": "Black Bear",
-    "img": "https://static.wikia.nocookie.net/farcry/images/b/bd/FC4_Animal_%284%29.png/revision/latest?cb=20180521134915",
+    "img": "https://static.wikia.nocookie.net/farcry/images/b/bd/FC4_Animal_%284%29.png",
     "size": "Medium",
     "hp": 19,
     "roll": "3d8 + 6",
@@ -266,7 +266,7 @@ const beasts = [
   },
   {
     "name": "Blood Hawk",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/d/df/Hawk_5e.jpg/revision/latest?cb=20210408132609",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/d/df/Hawk_5e.jpg",
     "size": "Small",
     "hp": 7,
     "roll": "2d6",
@@ -406,7 +406,7 @@ const beasts = [
   },
   {
     "name": "Cat",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/3/32/Cat1.png/revision/latest?cb=20190814175842",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/3/32/Cat1.png",
     "size": "Tiny",
     "hp": 2,
     "roll": "1d4",
@@ -1045,7 +1045,7 @@ const beasts = [
   },
   {
     "name": "Giant Crocodile",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/2/27/Crocodile.jpeg/revision/latest?cb=20190624075223",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/2/27/Crocodile.jpeg",
     "size": "Huge",
     "hp": 85,
     "roll": "9d12 + 27",
@@ -1129,7 +1129,7 @@ const beasts = [
   },
   {
     "name": "Giant Elk",
-    "img": "https://static.wikia.nocookie.net/novum-terram/images/e/e1/Eucladoceros_%28SciiFii%29.png/revision/latest/scale-to-width-down/412?cb=20200617032245",
+    "img": "https://static.wikia.nocookie.net/novum-terram/images/e/e1/Eucladoceros_%28SciiFii%29.png",
     "size": "Huge",
     "hp": 42,
     "roll": "5d12 + 10",
@@ -1199,7 +1199,7 @@ const beasts = [
   },
   {
     "name": "Giant Fly",
-    "img": "https://static.wikia.nocookie.net/pathfinder/images/5/54/Giant_fly_and_maggot.jpg/revision/latest?cb=20081002140048",
+    "img": "https://static.wikia.nocookie.net/pathfinder/images/5/54/Giant_fly_and_maggot.jpg",
     "size": "Large",
     "hp": 19,
     "roll": "3d10 + 3",
@@ -1261,7 +1261,7 @@ const beasts = [
   },
   {
     "name": "Giant Goat",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7e/Giant_ram_5e.png/revision/latest?cb=20230821073121",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7e/Giant_ram_5e.png",
     "size": "Large",
     "hp": 19,
     "roll": "3d10 + 3",
@@ -1297,7 +1297,7 @@ const beasts = [
   },
   {
     "name": "Giant Hyena",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8d/Hyena_4e.jpg/revision/latest?cb=20200311072705",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8d/Hyena_4e.jpg",
     "size": "Large",
     "hp": 45,
     "roll": "6d10 + 12",
@@ -1412,7 +1412,7 @@ const beasts = [
   },
   {
     "name": "Giant Owl",
-    "img": "https://static.wikia.nocookie.net/dungeonsdragons/images/b/b3/Giantowl.jpg/revision/latest?cb=20120410042459",
+    "img": "https://static.wikia.nocookie.net/dungeonsdragons/images/b/b3/Giantowl.jpg",
     "size": "Large",
     "hp": 19,
     "roll": "3d10 + 3",
@@ -1450,7 +1450,7 @@ const beasts = [
   },
   {
     "name": "Giant Poisonous Snake",
-    "img": "https://static.wikia.nocookie.net/dungeonsdragons/images/b/b3/Giantowl.jpg/revision/latest?cb=20120410042459",
+    "img": "https://static.wikia.nocookie.net/dungeonsdragons/images/b/b3/Giantowl.jpg",
     "size": "Medium",
     "hp": 11,
     "roll": "2d8 + 2",
@@ -1575,7 +1575,7 @@ const beasts = [
   },
   {
     "name": "Giant Sea Horse",
-    "img": "https://static.wikia.nocookie.net/wowpedia/images/6/6e/Seahorse.png/revision/latest?cb=20100806205450",
+    "img": "https://static.wikia.nocookie.net/wowpedia/images/6/6e/Seahorse.png",
     "size": "Large",
     "hp": 16,
     "roll": "3d10",
@@ -1738,7 +1738,7 @@ const beasts = [
   },
   {
     "name": "Giant Vulture",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c4/Giantvulture.jpg/revision/latest/scale-to-width-down/1200?cb=20200220162139",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c4/Giantvulture.jpg",
     "size": "Large",
     "hp": 22,
     "roll": "3d10 + 6",
@@ -1784,7 +1784,7 @@ const beasts = [
   },
   {
     "name": "Giant Wasp",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c4/Giantvulture.jpg/revision/latest/scale-to-width-down/1200?cb=20200220162139",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c4/Giantvulture.jpg",
     "size": "Medium",
     "hp": 13,
     "roll": "3d8",
@@ -1885,7 +1885,7 @@ const beasts = [
   },
   {
     "name": "Goat",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/1/14/Mountain_goat5e.jpeg/revision/latest?cb=20200916011730",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/1/14/Mountain_goat5e.jpeg",
     "size": "Medium",
     "hp": 4,
     "roll": "1d8",
@@ -2700,7 +2700,7 @@ const beasts = [
   },
   {
     "name": "Rhinoceros",
-    "img": "https://static.wikia.nocookie.net/here-be-dragons/images/5/59/Woolly_Rhinoceros.jpg/revision/latest?cb=20200707013539",
+    "img": "https://static.wikia.nocookie.net/here-be-dragons/images/5/59/Woolly_Rhinoceros.jpg",
     "size": "Large",
     "hp": 45,
     "roll": "6d10 + 12",
@@ -2798,7 +2798,7 @@ const beasts = [
   },
   {
     "name": "Scorpion",
-    "img": "https://static.wikia.nocookie.net/teso_gamepedia/images/7/76/Concept_art_Giant_scorpion.png/revision/latest/scale-to-width-down/367?cb=20140325130932",
+    "img": "https://static.wikia.nocookie.net/teso_gamepedia/images/7/76/Concept_art_Giant_scorpion.png",
     "size": "Tiny",
     "hp": 1,
     "roll": "1d4-1",
@@ -2824,7 +2824,7 @@ const beasts = [
   },
   {
     "name": "Sea Horse",
-    "img": "https://static.wikia.nocookie.net/wowpedia/images/6/6e/Seahorse.png/revision/latest?cb=20100806205450",
+    "img": "https://static.wikia.nocookie.net/wowpedia/images/6/6e/Seahorse.png",
     "size": "Tiny",
     "hp": 1,
     "roll": "1d4-1",
@@ -2890,7 +2890,7 @@ const beasts = [
   },
   {
     "name": "Stirge",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/8/86/Stirge-5e.png/revision/latest?cb=20171011140457",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/8/86/Stirge-5e.png",
     "size": "Tiny",
     "hp": 2,
     "roll": "1d4",
@@ -2927,7 +2927,7 @@ const beasts = [
   },
   {
     "name": "Tiger",
-    "img": "https://static.wikia.nocookie.net/rythiae/images/7/71/Dire_Tiger.jpg/revision/latest?cb=20141027094513",
+    "img": "https://static.wikia.nocookie.net/rythiae/images/7/71/Dire_Tiger.jpg",
     "size": "Large",
     "hp": 37,
     "roll": "5d10 + 10",
