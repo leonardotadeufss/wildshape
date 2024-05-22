@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
+import beasts from './data/beasts'
+import Beast from './types/types';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className='row'>
+        {
+          beasts.map((beast: Beast) => {
+            return (
+              <div className="col-4">
+                <Card beast={beast} key={beast.name} />
+              </div>
+            )
+          })
+        }
+      </div>
     </div>
   );
 }
