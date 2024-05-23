@@ -1,8 +1,9 @@
 interface Beast {
     "name": string,
-    "img"?: string,
+    "img": string,
     "type"?: string,
     "size": string,
+    "skills"?: string,
     "hp": number,
     "roll": string,
     "ac": number,
@@ -14,6 +15,7 @@ interface Beast {
     "int": number,
     "wis": number,
     "cha": number,
+    "vulnerabilities"?: string,
     "resistances"?: string,
     "immunities"?: string,
     "conditionImmunities"?: string,
@@ -21,17 +23,17 @@ interface Beast {
     "passive"?: number,
     "languages"?: string,
     "cr": string,
-    "traits"?: Array<Action>,
-    "actions"?: Array<Trait>,
+    "traits"?: Array<Trait>,
+    "actions"?: Array<Action>,
     "environments": Array<string>
 }
 
 
-interface Action {
+export interface Action {
     "name": string,
     "text": string
 }
-interface Trait {
+export interface Trait {
     "name": string,
     "text": string
 }

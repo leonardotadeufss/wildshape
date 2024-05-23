@@ -10,7 +10,7 @@ function App() {
         {
           beasts.map((beast: Beast) => {
             return (
-              <div className="col-4" key={beast.name}>
+              <div className="col-lg-4 col-12" key={beast.name}>
                 <Card beast={beast} />
               </div>
             )

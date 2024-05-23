@@ -7,7 +7,7 @@ export default function Card({ beast }: propType) {
     const url = beast.name.replace(' ', '_')
     return (
         <a className="text-decoration-none" href={`/${url}`}>
-            <div className="card my-3 text-center ">
+            <div className="card my-3 text-center" style={{ height: "400px" }}>
                 <div className="card-body">
                     <div className="card-img d-flex justify-content-center align-items-center" style={{ width: "100%", height: "250px" }}>
                         <img alt={beast.name} src={beast.img} className="mw-100 w-auto h-auto mh-100" />
