@@ -6,6 +6,10 @@ function App() {
 
   return (
     <div className="container">
+      <div className="py-5 text-center">
+        <h1 className='mt-5 fw-bold'>Forma selvagem</h1>
+        <p>Lista de bestas em D&D 5e para Forma Selvagem da classe Driuda</p>
+      </div>
       <div className='row'>
         {
           beasts.map((beast: Beast) => {

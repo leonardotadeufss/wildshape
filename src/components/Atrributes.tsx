@@ -16,24 +16,24 @@ export default function Attributes({ str, dex, con, int, wis, cha }: propType) {
     const chaBonus = Math.floor((cha - 10) / 2)
 
     return (
-        <div className="d-flex w-75 justify-content-around">
-            <div>
-                <h4>FOR</h4><p>{str} ({strBonus > 0 ? '+' : ""}{strBonus})</p>
+        <div className="d-flex w-100 justify-content-around pe-3">
+            <div className="text-center">
+                <h4 className="fw-bold">FOR</h4><p>{str} ({strBonus > 0 ? '+' : ""}{strBonus})</p>
             </div>
-            <div>
-                <h4>DEX</h4><p>{dex} ({dexBonus > 0 ? '+' : ""}{dexBonus})</p>
+            <div className="text-center">
+                <h4 className="fw-bold">DEX</h4><p>{dex} ({dexBonus > 0 ? '+' : ""}{dexBonus})</p>
             </div>
-            <div>
-                <h4>CON</h4><p>{con} ({conBonus > 0 ? '+' : ""}{conBonus})</p>
+            <div className="text-center">
+                <h4 className="fw-bold">CON</h4><p>{con} ({conBonus > 0 ? '+' : ""}{conBonus})</p>
             </div>
-            <div>
-                <h4>INT</h4><p>{int} ({intBonus > 0 ? '+' : ""}{intBonus})</p>
+            <div className="text-center">
+                <h4 className="fw-bold">INT</h4><p>{int} ({intBonus > 0 ? '+' : ""}{intBonus})</p>
             </div>
-            <div>
-                <h4>SAB</h4><p>{wis} ({wisBonus > 0 ? '+' : ""}{wisBonus})</p>
+            <div className="text-center">
+                <h4 className="fw-bold">SAB</h4><p>{wis} ({wisBonus > 0 ? '+' : ""}{wisBonus})</p>
             </div>
-            <div>
-                <h4>CAR</h4><p>{cha} ({chaBonus > 0 ? '+' : ""}{chaBonus})</p>
+            <div className="text-center">
+                <h4 className="fw-bold">CAR</h4><p>{cha} ({chaBonus > 0 ? '+' : ""}{chaBonus})</p>
             </div>
         </div>
 

@@ -225,7 +225,7 @@ const beasts = [
   },
   {
     "name": "Black Bear",
-    "img": "https://static.wikia.nocookie.net/farcry/images/b/bd/FC4_Animal_%284%29.png",
+    "img": "https://img.freepik.com/premium-photo/there-is-black-bear-walking-white-surface-generative-ai_958108-19604.jpg",
     "size": "Medium",
     "hp": 19,
     "roll": "3d8 + 6",
