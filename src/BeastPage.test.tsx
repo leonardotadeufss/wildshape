@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom'
-import { render, screen, queryByAttribute } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { Action, Trait } from './types/types'
 import Attributes from './components/Attributes'
 import beasts from './data/beasts'
@@ -59,22 +59,20 @@ describe('TraitsAndActions component', () => {
     it('should display all traits and actions if the beast have', () => {
         const GiantBadger = beasts[25]
         render(<TraitsAndActions actions={GiantBadger.actions} traits={GiantBadger.traits} />)
+        const actions = GiantBadger.actions ? GiantBadger.actions : []
+        actions.forEach((action: Action) => {
+            const actionName = screen.queryByText(new RegExp(`${action.name}:`, "i"))
+            expect(actionName).toBeInTheDocument()
 
-        if (GiantBadger.actions) {
-            GiantBadger.actions.forEach((action: Action) => {
-                console.log(action.name)
-                const actionName = screen.queryByText(new RegExp(`${action.name}:`, "i"))
-                expect(actionName).toBeInTheDocument()
+        });
 
-            });
-        }
-        if (GiantBadger.traits) {
-            GiantBadger.traits.forEach((trait: Trait) => {
-                const traitName = screen.queryByText(new RegExp(`${trait.name}:`, "i"))
-                expect(traitName).toBeInTheDocument()
+        const traits = GiantBadger.traits ? GiantBadger.traits : []
+        traits.forEach((trait: Trait) => {
+            const traitName = screen.queryByText(new RegExp(`${trait.name}:`, "i"))
+            expect(traitName).toBeInTheDocument()
 
-            });
-        }
+        });
+
     })
 
     it('should display only traits and not actions', () => {
@@ -85,7 +83,7 @@ describe('TraitsAndActions component', () => {
         const traits = screen.queryByTestId("traits")
 
         expect(actions).not.toBeInTheDocument()
-        expect(traits).toBeInTheDocument
+        expect(traits).toBeInTheDocument()
     })
 
     it('should display only actions and not traits', () => {

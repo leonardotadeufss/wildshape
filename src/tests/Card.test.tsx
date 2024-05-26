@@ -2,6 +2,7 @@ import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 import Card from "../components/Card"
 import beasts from "../data/beasts"
+import { Trait } from 'src/types/types'
 
 describe("Card component", () => {
     var beast = beasts[1]
@@ -27,13 +28,13 @@ describe("Card component", () => {
     it('should display traits', () => {
         render(<Card beast={beast} />)
 
+        const traits: Array<Trait> = beast.traits ? beast.traits : []
 
-        if (beast.traits) {
-            beast.traits.forEach(trait => {
-                var traitName = screen.getByText(trait.name)
-                expect(traitName).toBeInTheDocument()
-            })
-        }
+        traits.forEach((trait: Trait) => {
+            var traitName = screen.getByText(trait.name)
+            expect(traitName).toBeInTheDocument()
+        })
+
 
     })
 })

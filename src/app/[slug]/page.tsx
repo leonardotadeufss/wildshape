@@ -5,11 +5,11 @@ import Attributes from "src/components/Attributes"
 import Stats from "src/components/Stats"
 import TraitsAndActions from "src/components/TraitsAndActions"
 import beasts from "src/data/beasts"
-import Beast, { Action, Trait } from "src/types/types"
+import Beast from "src/types/types"
 
 export default function Page({ params }: { params: { slug: string } }) {
     const beastName = params.slug.replace("_", " ")
-    const beast: Beast | undefined = beasts.find(element => element.name == beastName)
+    const beast: Beast | undefined = beasts.find(element => element.name === beastName)
 
     if (beast) {
 
