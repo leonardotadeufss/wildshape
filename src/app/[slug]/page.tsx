@@ -19,9 +19,9 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <Link href={'/'} style={{ position: "absolute", left: "2rem", top: "2rem" }} className="btn btn-primary">
                     Voltar
                 </Link>
-                <div className="p-5" style={{ width: "85%" }}>
-                    <div className="row justify-content-between">
-                        <div className="col-6 paperBackground py-3">
+                <div className="p-lg-5 mt-5 mt-lg-0" style={{ width: "85%" }}>
+                    <div className="row justify-content-between flex-column-reverse flex-lg-row">
+                        <div className="col-lg-6 col-12 paperBackground py-3">
                             <h1 className="fw-bold">{beast.name}</h1>
                             <p className="fst-italic">{beast.size} - CR {beast.cr}</p>
                             <hr></hr>
@@ -49,7 +49,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                             <hr />
                             <TraitsAndActions traits={beast.traits} actions={beast.actions} />
                         </div>
-                        <div className="col-6" style={{ position: "relative", zIndex: "-1" }}>
+                        <div className="col-lg-6 col-12  mb-3 mt-5 my-lg-0 pt-5 pt-lg-0" style={{ position: "relative", zIndex: "-1", minHeight: "250px" }}>
                             <Image src={beast.img} alt={beast.name} fill style={{ objectFit: "contain" }} />
                         </div>
 

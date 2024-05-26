@@ -84,3 +84,9 @@ hr {
 .text-bg-primary {
   background-color: #731305 !important;
 }
+
+@media screen and (max-width: 991px) {
+  #root::before {
+    background-size: 25% 15%;
+  }
+}
