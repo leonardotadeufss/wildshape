@@ -15,7 +15,7 @@ const beasts = [
     "cha": 5,
     "skills": "Perception +5",
     "passive": 15,
-    "cr": "2 ",
+    "cr": "2",
     "traits": [
       {
         "name": "Pounce",
@@ -51,7 +51,7 @@ const beasts = [
     "wis": 12,
     "cha": 5,
     "passive": 11,
-    "cr": "3 ",
+    "cr": "3",
     "actions": [
       {
         "name": "Tail",
@@ -137,7 +137,7 @@ const beasts = [
     "wis": 12,
     "cha": 6,
     "passive": 11,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Pack Tactics",
@@ -170,7 +170,7 @@ const beasts = [
     "cha": 5,
     "senses": "Darkvision 30 ft.",
     "passive": 11,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Keen Smell",
@@ -203,7 +203,7 @@ const beasts = [
     "cha": 4,
     "senses": "Blindsight 60 ft.",
     "passive": 11,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Echolocation",
@@ -354,7 +354,7 @@ const beasts = [
     "cha": 7,
     "skills": "Perception +3",
     "passive": 13,
-    "cr": "1 ",
+    "cr": "1",
     "traits": [
       {
         "name": "Keen Smell",
@@ -421,7 +421,7 @@ const beasts = [
     "cha": 7,
     "skills": "Perception +3, Stealth +4",
     "passive": 13,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Keen Smell",
@@ -455,7 +455,7 @@ const beasts = [
     "skills": "Perception +3",
     "senses": "Darkvision 60 ft.",
     "passive": 13,
-    "cr": "2 ",
+    "cr": "2",
     "traits": [
       {
         "name": "Keen Smell",
@@ -530,7 +530,7 @@ const beasts = [
     "skills": "Stealth +2",
     "senses": "Blindsight 30 ft.",
     "passive": 9,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Amphibious",
@@ -594,7 +594,7 @@ const beasts = [
     "wis": 14,
     "cha": 5,
     "passive": 12,
-    "cr": "0 ",
+    "cr": "0",
     "actions": [
       {
         "name": "Bite",
@@ -620,7 +620,7 @@ const beasts = [
     "cha": 7,
     "skills": "Perception +3, Stealth +4",
     "passive": 13,
-    "cr": "1 ",
+    "cr": "1",
     "traits": [
       {
         "name": "Keen Hearing and Smell",
@@ -682,7 +682,7 @@ const beasts = [
     "cha": 7,
     "skills": "Perception +4",
     "passive": 14,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Keen Sight",
@@ -713,7 +713,7 @@ const beasts = [
     "wis": 11,
     "cha": 6,
     "passive": 10,
-    "cr": "4 ",
+    "cr": "4",
     "traits": [
       {
         "name": "Trampling Charge",
@@ -821,7 +821,7 @@ const beasts = [
     "skills": "Perception +1, Stealth +3",
     "senses": "Darkvision 30 ft.",
     "passive": 11,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Amphibious",
@@ -928,7 +928,7 @@ const beasts = [
     "wis": 7,
     "cha": 5,
     "passive": 8,
-    "cr": "2 ",
+    "cr": "2",
     "traits": [
       {
         "name": "Charge",
@@ -994,7 +994,7 @@ const beasts = [
     "skills": "Perception +2",
     "senses": "Blindsight 10 ft.",
     "passive": 12,
-    "cr": "2 ",
+    "cr": "2",
     "actions": [
       {
         "name": "Bite",
@@ -1060,7 +1060,7 @@ const beasts = [
     "cha": 7,
     "skills": "Stealth +5",
     "passive": 10,
-    "cr": "5 ",
+    "cr": "5",
     "traits": [
       {
         "name": "Hold Breath",
@@ -1102,7 +1102,7 @@ const beasts = [
     "cha": 10,
     "skills": "Perception +4",
     "passive": 14,
-    "cr": "1 ",
+    "cr": "1",
     "traits": [
       {
         "name": "Keen Sight",
@@ -1143,7 +1143,7 @@ const beasts = [
     "cha": 10,
     "skills": "Perception +4",
     "passive": 14,
-    "cr": "2 ",
+    "cr": "2",
     "traits": [
       {
         "name": "Charge",
@@ -1181,7 +1181,7 @@ const beasts = [
     "cha": 3,
     "senses": "Blindsight 30 ft.",
     "passive": 8,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Illumination",
@@ -1214,7 +1214,7 @@ const beasts = [
     "cha": 3,
     "senses": "Darkvision 60 ft.",
     "passive": 10,
-    "cr": "0 ",
+    "cr": "0",
     "environments": []
   },
   {
@@ -1311,7 +1311,7 @@ const beasts = [
     "cha": 7,
     "skills": "Perception +3",
     "passive": 13,
-    "cr": "1 ",
+    "cr": "1",
     "traits": [
       {
         "name": "Rampage",
@@ -1382,7 +1382,7 @@ const beasts = [
     "skills": "Perception +4, Stealth +5",
     "senses": "Darkvision 60 ft.",
     "passive": 14,
-    "cr": "1 ",
+    "cr": "1",
     "traits": [
       {
         "name": "Hold Breath",
@@ -1554,7 +1554,7 @@ const beasts = [
     "cha": 3,
     "senses": "Blindsight 60 ft.",
     "passive": 9,
-    "cr": "3 ",
+    "cr": "3",
     "actions": [
       {
         "name": "Claw",
@@ -1628,7 +1628,7 @@ const beasts = [
     "skills": "Perception +3",
     "senses": "Blindsight 60 ft.",
     "passive": 13,
-    "cr": "5 ",
+    "cr": "5",
     "traits": [
       {
         "name": "Blood Frenzy",
@@ -1666,7 +1666,7 @@ const beasts = [
     "skills": "Stealth +7",
     "senses": "Blindsight 10 ft., Darkvision 60 ft.",
     "passive": 10,
-    "cr": "1 ",
+    "cr": "1",
     "traits": [
       {
         "name": "Spider Climb",
@@ -1712,7 +1712,7 @@ const beasts = [
     "cha": 3,
     "senses": "Darkvision 30 ft.",
     "passive": 10,
-    "cr": "1 ",
+    "cr": "1",
     "traits": [
       {
         "name": "Amphibious",
@@ -1753,7 +1753,7 @@ const beasts = [
     "cha": 7,
     "skills": "Perception +3",
     "passive": 13,
-    "cr": "1 ",
+    "cr": "1",
     "traits": [
       {
         "name": "Keen Sight and Smell",
@@ -1898,7 +1898,7 @@ const beasts = [
     "wis": 10,
     "cha": 5,
     "passive": 10,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Charge",
@@ -1936,7 +1936,7 @@ const beasts = [
     "cha": 6,
     "skills": "Perception +4",
     "passive": 14,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Keen Sight",
@@ -1969,7 +1969,7 @@ const beasts = [
     "skills": "Perception +2",
     "senses": "Darkvision 30 ft.",
     "passive": 12,
-    "cr": "2 ",
+    "cr": "2",
     "traits": [
       {
         "name": "Blood Frenzy",
@@ -2005,7 +2005,7 @@ const beasts = [
     "cha": 5,
     "skills": "Perception +3",
     "passive": 13,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Pack Tactics",
@@ -2037,7 +2037,7 @@ const beasts = [
     "cha": 6,
     "skills": "Perception +3",
     "passive": 13,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Keen Hearing and Smell",
@@ -2074,7 +2074,7 @@ const beasts = [
     "skills": "Perception +3",
     "senses": "Blindsight 120 ft.",
     "passive": 13,
-    "cr": "3 ",
+    "cr": "3",
     "traits": [
       {
         "name": "Echolocation",
@@ -2113,7 +2113,7 @@ const beasts = [
     "cha": 8,
     "skills": "Perception +3, Stealth +6",
     "passive": 13,
-    "cr": "1 ",
+    "cr": "1",
     "traits": [
       {
         "name": "Keen Smell",
@@ -2163,7 +2163,7 @@ const beasts = [
     "cha": 3,
     "senses": "Darkvision 30 ft.",
     "passive": 9,
-    "cr": "0 ",
+    "cr": "0",
     "actions": [
       {
         "name": "Bite",
@@ -2188,7 +2188,7 @@ const beasts = [
     "wis": 11,
     "cha": 6,
     "passive": 10,
-    "cr": "6 ",
+    "cr": "6",
     "traits": [
       {
         "name": "Trampling Charge",
@@ -2294,7 +2294,7 @@ const beasts = [
     "skills": "Perception +2, Stealth +4",
     "senses": "Darkvision 30 ft.",
     "passive": 12,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Hold Breath",
@@ -2340,7 +2340,7 @@ const beasts = [
     "skills": "Perception +3, Stealth +3",
     "senses": "Darkvision 120 ft.",
     "passive": 13,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Flyby",
@@ -2419,7 +2419,7 @@ const beasts = [
     "cha": 5,
     "skills": "Perception +3, Stealth +4",
     "passive": 13,
-    "cr": "2 ",
+    "cr": "2",
     "traits": [
       {
         "name": "Hold Breath",
@@ -2479,7 +2479,7 @@ const beasts = [
     "cha": 7,
     "skills": "Perception +3",
     "passive": 13,
-    "cr": "2 ",
+    "cr": "2",
     "traits": [
       {
         "name": "Keen Smell",
@@ -2577,7 +2577,7 @@ const beasts = [
     "cha": 2,
     "senses": "Darkvision 60 ft.",
     "passive": 8,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Blood Frenzy",
@@ -2613,7 +2613,7 @@ const beasts = [
     "cha": 4,
     "senses": "Darkvision 30 ft.",
     "passive": 10,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Keen Smell",
@@ -2646,7 +2646,7 @@ const beasts = [
     "cha": 6,
     "skills": "Perception +3",
     "passive": 13,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Mimicry",
@@ -2713,7 +2713,7 @@ const beasts = [
     "wis": 12,
     "cha": 6,
     "passive": 11,
-    "cr": "2 ",
+    "cr": "2",
     "traits": [
       {
         "name": "Charge",
@@ -2771,7 +2771,7 @@ const beasts = [
     "cha": 8,
     "skills": "Perception +3, Stealth +6",
     "passive": 13,
-    "cr": "2 ",
+    "cr": "2",
     "traits": [
       {
         "name": "Keen Smell",
@@ -2812,7 +2812,7 @@ const beasts = [
     "cha": 2,
     "senses": "Blindsight 10 ft.",
     "passive": 9,
-    "cr": "0 ",
+    "cr": "0",
     "actions": [
       {
         "name": "Sting",
@@ -2837,7 +2837,7 @@ const beasts = [
     "wis": 10,
     "cha": 2,
     "passive": 10,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Water Breathing",
@@ -2864,7 +2864,7 @@ const beasts = [
     "skills": "Stealth +4",
     "senses": "Darkvision 30 ft.",
     "passive": 12,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Spider Climb",
@@ -2942,7 +2942,7 @@ const beasts = [
     "skills": "Perception +3, Stealth +6",
     "senses": "Darkvision 60 ft.",
     "passive": 13,
-    "cr": "1 ",
+    "cr": "1",
     "traits": [
       {
         "name": "Keen Smell",
@@ -2981,7 +2981,7 @@ const beasts = [
     "wis": 11,
     "cha": 5,
     "passive": 10,
-    "cr": "5 ",
+    "cr": "5",
     "traits": [
       {
         "name": "Trampling Charge",
@@ -3019,7 +3019,7 @@ const beasts = [
     "cha": 4,
     "skills": "Perception +3",
     "passive": 13,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Keen Sight and Smell",
@@ -3086,7 +3086,7 @@ const beasts = [
     "cha": 3,
     "skills": "Perception +3, Stealth +5",
     "passive": 13,
-    "cr": "0 ",
+    "cr": "0",
     "traits": [
       {
         "name": "Keen Hearing and Smell",
@@ -3161,7 +3161,7 @@ const beasts = [
     "senses": "Darkvision 60ft.",
     "passive": 10,
     "languages": "Auran",
-    "cr": "5 ",
+    "cr": "5",
     "traits": [
       {
         "name": "Air Form",
@@ -3207,7 +3207,7 @@ const beasts = [
     "senses": "Darkvision 60 ft., Tremorsense 60 ft",
     "passive": 10,
     "languages": "Terran",
-    "cr": "5 ",
+    "cr": "5",
     "traits": [
       {
         "name": "Earth Glide",
@@ -3251,7 +3251,7 @@ const beasts = [
     "senses": "Darkvision 60 ft.",
     "passive": 10,
     "languages": "Ignan",
-    "cr": "5 ",
+    "cr": "5",
     "traits": [
       {
         "name": "Fire Form",
@@ -3300,7 +3300,7 @@ const beasts = [
     "senses": "Darkvision 60 ft.",
     "passive": 10,
     "languages": "Aquan",
-    "cr": "5 ",
+    "cr": "5",
     "traits": [
       {
         "name": "Water Form",

@@ -1,14 +1,16 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
-import Card from "./components/Card"
-import beasts from "./data/beasts"
+import App from './app/page'
+import beasts from './data/beasts'
 
-describe("Card component", () => {
-    it('should display image, name, cr and traits', () => {
-        render(<Card beast={beasts[0]} />)
+describe("App component", () => {
+    it('should display all beast cards', () => {
+        render(<App />)
 
-        const name = screen.getByText('Allosaurus')
+        beasts.forEach(beast => {
+            var beastName = screen.getByText(beast.name)
+            expect(beastName).toBeInTheDocument()
+        })
 
-        expect(name).toBeInTheDocument()
     })
 })

@@ -7,8 +7,8 @@ interface propType {
 export default function TraitsAndActions({ traits, actions }: propType) {
     return (
         <>
-            <div>
-                {traits &&
+            {traits &&
+                <div data-testid="traits"> {
                     traits.map((trait: Trait) => {
                         return (
                             <div key={trait.name} className="mb-2">
@@ -18,9 +18,10 @@ export default function TraitsAndActions({ traits, actions }: propType) {
                         )
                     })
                 }
-            </div>
-            <div>
-                {actions &&
+                </div>
+            }
+            {actions &&
+                <div data-testid="actions"> {
                     actions.map((action: Action) => {
                         return (
                             <div key={action.name} className="mb-2">
@@ -30,7 +31,8 @@ export default function TraitsAndActions({ traits, actions }: propType) {
                         )
                     })
                 }
-            </div>
+                </div>
+            }
         </>
     )
 };
