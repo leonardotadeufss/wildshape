@@ -1,5 +1,7 @@
+import ScrollToTop from 'src/components/ScrollToTop';
 import '../App.css';
 import type { Metadata } from 'next'
+import Footer from 'src/components/Footer';
 
 export const metadata: Metadata = {
     title: 'Wildshape',
@@ -17,8 +19,11 @@ export default function RootLayout({
                 <link rel="icon" href="/favicon.png" sizes="any" />
             </head>
             <body>
-                <div id="root">{children}</div>
+                <div id="root">
+                    {children}
+                </div>
             </body>
+            <Footer />
         </html>
     )
 }

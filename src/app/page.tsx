@@ -1,3 +1,4 @@
+import ScrollToTop from 'src/components/ScrollToTop';
 import Card from '../components/Card';
 import beasts from '../data/beasts'
 import Beast from '../types/types';
@@ -21,6 +22,8 @@ function App() {
           })
         }
       </div>
+      <ScrollToTop />
+
     </div>
   );
 }
