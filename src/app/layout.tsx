@@ -4,8 +4,8 @@ import type { Metadata } from 'next'
 import Footer from 'src/components/Footer';
 
 export const metadata: Metadata = {
-    title: 'Wildshape',
-    description: 'Web site created with Next.js to display wildshape possiblities to druid class in D&D 5e',
+    title: 'Forma Selvagem',
+    description: 'WebApp criado utilizando Next.js para exibir as possibilidades de forma selvagem para a classe Druid em D&D 5e',
 }
 
 export default function RootLayout({
@@ -14,16 +14,18 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en">
-            <head>
-                <link rel="icon" href="/favicon.png" sizes="any" />
-            </head>
-            <body>
-                <div id="root">
-                    {children}
-                </div>
-            </body>
-            <Footer />
-        </html>
+        <>
+            <html lang="en">
+                <head>
+                    <link rel="icon" href="/favicon.png" sizes="any" />
+                </head>
+                <body>
+                    <div id="root">
+                        {children}
+                    </div>
+                    <Footer />
+                </body>
+            </html>
+        </>
     )
 }

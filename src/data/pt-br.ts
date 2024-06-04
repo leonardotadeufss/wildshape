@@ -1,8 +1,8 @@
 const beasts = [
   {
-    "name": "Allosaurus",
+    "name": "Alossauro",
     "img": "https://upload.wikimedia.org/wikipedia/commons/5/55/Allosaurus_BW_mirrored.jpg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 60,
     "roll": "6d10 + 18",
     "ac": 15,
@@ -13,33 +13,33 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 5,
-    "skills": "Perception +5",
+    "skills": "Percepção +5",
     "passive": 15,
     "cr": "2 ",
     "traits": [
       {
-        "name": "Pounce",
-        "text": "If the allosaurus moves at least 30 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the allosaurus can make one bite attack against it as a bonus action."
+        "name": "Bote",
+        "text": "Se o alossauro se mover, pelo menos, 30 ft. em linha reta em direção de uma criatura e atingi-la, no mesmo turno, o alvo deve ser bem sucedido num teste de resistência de Força DC 13 ou será derrubada no chão.Se o alvo cair no chão, o alossauro pode realizar um ataque de mordida contra ele, com uma ação bônus."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage.",
-        "attack": "Bite|6|2d10+4"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 5 ft., um alvo. Acerto: 15 (2d10 + 4) de dano perfurante.",
+        "attack": "Mordida|6|2d10+4"
       },
       {
-        "name": "Claw",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage.",
-        "attack": "Claw|6|1d8+4"
+        "name": "Garra",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 5 ft., um alvo. Acerto: 8 (1d8 + 4) dano cortante.",
+        "attack": "Garra|6|1d8+4"
       }
     ],
-    "environments": ["Grassland"]
+    "environments": ["Prado"]
   },
   {
-    "name": "Ankylosaurus",
+    "name": "Anquilossauro",
     "img": "https://2e.aonprd.com/Images/Monsters/Dinosaur_Ankylosaurus.png?AspxAutoDetectCookieSupport=1",
-    "size": "Huge",
+    "size": "Enorme",
     "hp": 68,
     "roll": "8d12 + 16",
     "ac": 15,
@@ -54,16 +54,16 @@ const beasts = [
     "cr": "3 ",
     "actions": [
       {
-        "name": "Tail",
-        "text": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
+        "name": "Cauda",
+        "text": "Ataque corpo-a-corpo com arma: +7 para atingir, alcance 10 ft., um alvo. Acerto: 18 (4d6 + 4) dano de concussão.  Se o alvo for uma criatura, ela deve ser bem sucedida num teste de resistência de DC 14  ou será derrubada no chão."
       }
     ],
-    "environments": ["Grassland"]
+    "environments": ["Prado"]
   },
   {
-    "name": "Ape",
+    "name": "Macaco",
     "img": "https://angrygolem-games.com/wp-content/uploads/2021/12/Carnivorous-Ape.jpg",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 19,
     "roll": "3d8 + 6",
     "ac": 12,
@@ -75,31 +75,31 @@ const beasts = [
     "int": 6,
     "wis": 12,
     "cha": 7,
-    "skills": "Athletics +5, Perception +3",
+    "skills": "Atletismo +5, Percepção +3",
     "passive": 13,
     "cr": "1/2",
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The ape makes two fist attacks."
+        "name": "Ataques múltiplos",
+        "text": "O macaco realiza dois ataques de punho."
       },
       {
-        "name": "Fist",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
-        "attack": "Fist|5|1d6+3"
+        "name": "Punho",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 6 (1d6 + 3) dano de concussão.",
+        "attack": "Punho|5|1d6+3"
       },
       {
-        "name": "Rock",
-        "text": "Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
-        "attack": "Rock|5|1d6+3"
+        "name": "Rocha",
+        "text": "Ataque à Distância com Arma: +5 para atingir, alcance 25/50 ft., um alvo. Acerto: 6 (1d6 + 3) dano de concussão.",
+        "attack": "Rocha|5|1d6+3"
       }
     ],
-    "environments": ["Forest"]
+    "environments": ["Floresta"]
   },
   {
-    "name": "Axe Beak",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/5/5b/Axe_beak-5e.jpg/revision/latest?cb=20200917222507",
-    "size": "Large",
+    "name": "Bico de Machado",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/5/5b/Axe_beak-5e.jpg",
+    "size": "Grande",
     "hp": 19,
     "roll": "3d10 + 3",
     "ac": 11,
@@ -114,17 +114,17 @@ const beasts = [
     "cr": "1/4",
     "actions": [
       {
-        "name": "Beak",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.",
-        "attack": "Beak|4|1d8+2"
+        "name": "Bicada",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 6 (1d8 + 2) dano cortante.",
+        "attack": "Bicada|4|1d8+2"
       }
     ],
-    "environments": ["Grassland", "Hill"]
+    "environments": ["Prado", "Colina"]
   },
   {
-    "name": "Baboon",
+    "name": "Babuíno",
     "img": "https://img.freepik.com/fotos-premium/baboon-corpo-inteiro-contorno-preto-cores-naturais-desenho-comico-em-fundo-branco-gerado-por-ia_29654-4206.jpg",
-    "size": "Small",
+    "size": "Pequeno",
     "hp": 3,
     "roll": "1d6",
     "ac": 12,
@@ -140,23 +140,23 @@ const beasts = [
     "cr": "0 ",
     "traits": [
       {
-        "name": "Pack Tactics",
-        "text": "The baboon has advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+        "name": "Táticas de grupo",
+        "text": "O babuíno tem vantagem nas jogadas de ataque contra uma criatura se, pelo menos, um dos aliados do babuíno estiver a 5ft da criaturas e não estiver incapacitado."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) piercing damage.",
-        "attack": "Bite|1|1d4-1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +1 para atingir, alcance 5 ft., um alvo. Acerto: 1 (1d4 - 1) de dano perfurante.",
+        "attack": "Mordida|1|1d4-1"
       }
     ],
-    "environments": ["Forest", "Hill"]
+    "environments": ["Floresta", "Colina"]
   },
   {
-    "name": "Badger",
+    "name": "Texugo",
     "img": "https://angrygolem-games.com/wp-content/uploads/2021/11/Badger.jpg",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 3,
     "roll": "1d4 + 1",
     "ac": 10,
@@ -168,28 +168,28 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 5,
-    "senses": "Darkvision 30 ft.",
+    "senses": "Visão no escuro 30 ft.",
     "passive": 11,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The badger has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "O texugo tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
-        "attack": "Bite|2|1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +2 para atingir, alcance 5 ft., um alvo. Acerto: 1 de dano perfurante.",
+        "attack": "Mordida|2|1"
       }
     ],
-    "environments": ["Forest"]
+    "environments": ["Floresta"]
   },
   {
-    "name": "Bat",
+    "name": "Morcego",
     "img": "https://img.freepik.com/premium-photo/there-is-bat-that-is-flying-sky-with-its-wings-spread-generative-ai_958078-41948.jpg",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 1,
     "roll": "1d4-1",
     "ac": 12,
@@ -201,32 +201,32 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 4,
-    "senses": "Blindsight 60 ft.",
+    "senses": "Percepção às cegas 60 ft.",
     "passive": 11,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Echolocation",
-        "text": "The bat can't use its blindsight while deafened."
+        "name": "Eco Localização",
+        "text": "Enquanto não puder ouvir, o morcego perderá a percepção às cegas."
       },
       {
-        "name": "Keen Hearing",
-        "text": "The bat has advantage on Wisdom (Perception) checks that rely on hearing."
+        "name": "Audição aguçada",
+        "text": "O morcego tem vantagem em testes de Sabedoria (Percepção) relacionados à audição"
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +0 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.",
-        "attack": "Bite||1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +0 para atingir, alcance 5 ft., uma criatura. Acerto: 1 de dano perfurante.",
+        "attack": "Mordida||1"
       }
     ],
     "environments": []
   },
   {
-    "name": "Black Bear",
-    "img": "https://static.wikia.nocookie.net/farcry/images/b/bd/FC4_Animal_%284%29.png/revision/latest?cb=20180521134915",
-    "size": "Medium",
+    "name": "Urso Negro",
+    "img": "https://static.wikia.nocookie.net/farcry/images/b/bd/FC4_Animal_%284%29.png",
+    "size": "Médio",
     "hp": 19,
     "roll": "3d8 + 6",
     "ac": 11,
@@ -242,32 +242,32 @@ const beasts = [
     "cr": "1/2",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "O urso tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       }
     ],
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The bear makes two attacks: one with its bite and one with its claws."
+        "name": "Ataques múltiplos",
+        "text": "O urso realiza dois ataques: um com sua mordida e um com suas garras"
       },
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
-        "attack": "Bite|3|1d6+2"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 5 (1d6 + 2) de dano perfurante.",
+        "attack": "Mordida|3|1d6+2"
       },
       {
-        "name": "Claws",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage.",
-        "attack": "Claws|3|2d4+2"
+        "name": "Garras",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 7 (2d4 + 2) dano cortante.",
+        "attack": "Garras|3|2d4+2"
       }
     ],
-    "environments": ["Forest"]
+    "environments": ["Floresta"]
   },
   {
-    "name": "Blood Hawk",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/d/df/Hawk_5e.jpg/revision/latest?cb=20210408132609",
-    "size": "Small",
+    "name": "Falcão de sangue",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/d/df/Hawk_5e.jpg",
+    "size": "Pequeno",
     "hp": 7,
     "roll": "2d6",
     "ac": 12,
@@ -279,32 +279,32 @@ const beasts = [
     "int": 3,
     "wis": 14,
     "cha": 5,
-    "skills": "Perception +4",
+    "skills": "Percepção +4",
     "passive": 14,
     "cr": "1/8",
     "traits": [
       {
-        "name": "Keen Sight",
-        "text": "The hawk has advantage on Wisdom (Perception) checks that rely on sight."
+        "name": "Visão aguçada",
+        "text": "O falcão tem vantagem em testes de Sabedoria (Percepção) relacionados à visão."
       },
       {
-        "name": "Pack Tactics",
-        "text": "The hawk has advantage on an attack roll against a creature if at least one of the hawk's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+        "name": "Táticas de grupo",
+        "text": "O falcão tem vantagem nas jogadas de ataque contra uma criatura se, pelo menos, um dos aliados do falcão estiver a 5ft da criaturas e não estiver incapacitado."
       }
     ],
     "actions": [
       {
-        "name": "Beak",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
-        "attack": "Beak|4|1d4+2"
+        "name": "Bicada",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 4 (1d4 + 2) de dano perfurante.",
+        "attack": "Bicada|4|1d4+2"
       }
     ],
-    "environments": ["Arctic", "Coastal", "Forest", "Grassland", "Hill", "Mountain"]
+    "environments": ["Arctic", "Coastal", "Floresta", "Prado", "Colina", "Montanha"]
   },
   {
-    "name": "Boar",
+    "name": "Javali",
     "img": "https://trpgtdnd.weebly.com/uploads/6/5/4/6/6546502/boar_orig.jpg",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 11,
     "roll": "2d8 + 2",
     "ac": 11,
@@ -319,28 +319,28 @@ const beasts = [
     "cr": "1/4",
     "traits": [
       {
-        "name": "Charge",
-        "text": "If the boar moves at least 20 ft. straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 3 (1d6) slashing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
-        "attack": "Charge||1d6"
+        "name": "Investida",
+        "text": "Se o javali se mover, pelo menos, 20ft em linha reta em direção de uma criatura logo antes de atingi-la com seu ataque de presa, o alvo sofre 3 (1d6) de dano cortante extra e deve ser bem sucedido num teste de resistência de Força DC 11 para não cair no chão.",
+        "attack": "Investida||1d6"
       },
       {
-        "name": "Relentless (Recharges after a Short or Long Rest)",
-        "text": "If the boar takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+        "name": "Implacável (Recarrega após um Descanso Curto ou Longo)",
+        "text": "Se o javali sofrer 7 de dano ou menos, que o reduziria a 0 pontos de vida, ele é reduzido a 1 ponto de vida, no lugar."
       }
     ],
     "actions": [
       {
-        "name": "Tusk",
-        "text": "Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
-        "attack": "Tusk|3|1d6+1"
+        "name": "Presas",
+        "text": "Ataque Corpo-a-Corpo com Arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 4 (1d6 + 1) dano cortante.",
+        "attack": "Presas|3|1d6+1"
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill"]
+    "environments": ["Floresta", "Prado", "Colina"]
   },
   {
-    "name": "Brown Bear",
-    "img": "https://www.pngitem.com/pimgs/m/206-2060206_image-result-for-d-dungeons-and-dragons-brown.png",
-    "size": "Large",
+    "name": "Urso Marrom",
+    "img": "https://www.pngitem.com/pimgs/m/206-2060206_image-result-for-d-dungeons-e-dragons-brown.png",
+    "size": "Grande",
     "hp": 34,
     "roll": "4d10 + 12",
     "ac": 11,
@@ -352,37 +352,37 @@ const beasts = [
     "int": 2,
     "wis": 13,
     "cha": 7,
-    "skills": "Perception +3",
+    "skills": "Percepção +3",
     "passive": 13,
     "cr": "1 ",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "O urso tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       }
     ],
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The bear makes two attacks: one with its bite and one with its claws."
+        "name": "Ataques múltiplos",
+        "text": "O urso realiza dois ataques: um com sua mordida e um com suas garras"
       },
       {
-        "name": "Bite",
-        "text": "Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.",
-        "attack": "Bite|5|1d8+4"
+        "name": "Mordida",
+        "text": "Ataque Corpo-a-Corpo com Arma: +6 para atingir, alcance 5 ft., um alvo. Acerto: 8 (1d8 + 4) de dano perfurante.",
+        "attack": "Mordida|5|1d8+4"
       },
       {
-        "name": "Claws",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
-        "attack": "Claws|5|2d6+4"
+        "name": "Garras",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 5 ft., um alvo. Acerto: 11 (2d6 + 4) dano cortante.",
+        "attack": "Garras|5|2d6+4"
       }
     ],
-    "environments": ["Arctic", "Forest", "Hill"]
+    "environments": ["Arctic", "Floresta", "Colina"]
   },
   {
-    "name": "Camel",
+    "name": "Camelo",
     "img": "https://www.kryxrpg.com/static/674863252c7330157ffbfaeafa8f499f/57dfe/camel.png",
-    "size": "Large",
+    "size": "Grande",
     "hp": 15,
     "roll": "2d10 + 4",
     "ac": 9,
@@ -397,17 +397,17 @@ const beasts = [
     "cr": "1/8",
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
-        "attack": "Bite|5|1d4"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 2 (1d4) dano de concussão.",
+        "attack": "Mordida|5|1d4"
       }
     ],
-    "environments": ["Desert"]
+    "environments": ["Deserto"]
   },
   {
-    "name": "Cat",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/3/32/Cat1.png/revision/latest?cb=20190814175842",
-    "size": "Tiny",
+    "name": "Gato",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/3/32/Cat1.png",
+    "size": "Miúda",
     "hp": 2,
     "roll": "1d4",
     "ac": 12,
@@ -419,28 +419,28 @@ const beasts = [
     "int": 3,
     "wis": 12,
     "cha": 7,
-    "skills": "Perception +3, Stealth +4",
+    "skills": "Percepção +3, Furtividade +4",
     "passive": 13,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The cat has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "O gato tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       }
     ],
     "actions": [
       {
-        "name": "Claws",
-        "text": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
-        "attack": "Claws||1"
+        "name": "Garras",
+        "text": "Ataque corpo-a-corpo com arma: +0 para atingir, alcance 5 ft., um alvo. Acerto: 1 dano cortante.",
+        "attack": "Garras||1"
       }
     ],
-    "environments": ["Desert", "Forest", "Grassland", "Urban"]
+    "environments": ["Deserto", "Floresta", "Prado", "Urbano"]
   },
   {
-    "name": "Cave Bear",
+    "name": "Urso da caverna",
     "img": "https://www.kryxrpg.com/static/e2ccbf80ba572578e3026fb07aa57738/53b4f/cave-bear.png",
-    "size": "Large",
+    "size": "Grande",
     "hp": 42,
     "roll": "5d10 + 15",
     "ac": 12,
@@ -452,38 +452,38 @@ const beasts = [
     "int": 2,
     "wis": 13,
     "cha": 7,
-    "skills": "Perception +3",
-    "senses": "Darkvision 60 ft.",
+    "skills": "Percepção +3",
+    "senses": "Visão no escuro 60 ft.",
     "passive": 13,
     "cr": "2 ",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "O urso tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       }
     ],
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The bear makes two attacks: one with its bite and one with its claws."
+        "name": "Ataques múltiplos",
+        "text": "O urso realiza dois ataques: um com sua mordida e um com suas garras"
       },
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage.",
-        "attack": "Bite|7|1d8+5"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +7 para atingir, alcance 5 ft., um alvo. Acerto: 9 (1d8 + 5) de dano perfurante.",
+        "attack": "Mordida|7|1d8+5"
       },
       {
-        "name": "Claws",
-        "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
-        "attack": "Claws|7|2d6+5"
+        "name": "Garras",
+        "text": "Ataque corpo-a-corpo com arma: +7 para atingir, alcance 5 ft., um alvo. Acerto: 12 (2d6 + 5) dano cortante.",
+        "attack": "Garras|7|2d6+5"
       }
     ],
     "environments": []
   },
   {
-    "name": "Constrictor Snake",
+    "name": "Cobra constritora",
     "img": "https://www.worldanvil.com/uploads/images/6bf1e9db4220de11382bd63c57d285df.jpg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 13,
     "roll": "2d10 + 2",
     "ac": 12,
@@ -495,27 +495,27 @@ const beasts = [
     "int": 1,
     "wis": 10,
     "cha": 3,
-    "senses": "Blindsight 10 ft.",
+    "senses": "Percepção às cegas 10 ft.",
     "passive": 10,
     "cr": "1/4",
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
-        "attack": "Bite|4|1d6+2"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., uma criatura. Acerto: 5 (1d6 + 2) de dano perfurante.",
+        "attack": "Mordida|4|1d6+2"
       },
       {
-        "name": "Constrict",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.",
-        "attack": "Constrict|4|1d8+2"
+        "name": "Constrição",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., uma criatura. Acerto: 6 (1d8 + 2) dano de concussão,e o alvo está agarrado (DC 14 para escapar). Até o agarrão terminar, a criatura estará impedida e a cobra não poderá constringir outro alvo.",
+        "attack": "Constrição|4|1d8+2"
       }
     ],
-    "environments": ["Desert", "Forest", "Swamp", "Underwater"]
+    "environments": ["Deserto", "Floresta", "Pântano", "Underwater"]
   },
   {
-    "name": "Crab",
+    "name": "Caranguejo",
     "img": "https://t4.ftcdn.net/jpg/06/65/80/19/360_F_665801944_tAQpVoEoTWHcDVunL2hiLxHMdlxuxy9O.jpg",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 2,
     "roll": "1d4",
     "ac": 11,
@@ -527,29 +527,29 @@ const beasts = [
     "int": 1,
     "wis": 8,
     "cha": 2,
-    "skills": "Stealth +2",
-    "senses": "Blindsight 30 ft.",
+    "skills": "Furtividade +2",
+    "senses": "Percepção às cegas 30 ft.",
     "passive": 9,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Amphibious",
-        "text": "The crab can breathe air and water."
+        "name": "Anfíbio",
+        "text": "O caranguejo pode respirar ar e água."
       }
     ],
     "actions": [
       {
-        "name": "Claw",
-        "text": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage.",
-        "attack": "Claw||1"
+        "name": "Garra",
+        "text": "Ataque corpo-a-corpo com arma: +0 para atingir, alcance 5 ft., um alvo. Acerto: 1 dano de concussão.",
+        "attack": "Garra||1"
       }
     ],
     "environments": ["Coastal"]
   },
   {
-    "name": "Crocodile",
+    "name": "Crocodilo",
     "img": "https://i.pinimg.com/originals/6d/12/f1/6d12f18106c82e346e1dc26bc0f380d4.png",
-    "size": "Large",
+    "size": "Grande",
     "hp": 19,
     "roll": "3d10 + 3",
     "ac": 12,
@@ -561,28 +561,28 @@ const beasts = [
     "int": 2,
     "wis": 10,
     "cha": 5,
-    "skills": "Stealth +2",
+    "skills": "Furtividade +2",
     "passive": 10,
     "cr": "1/2",
     "traits": [
       {
-        "name": "Hold Breath",
-        "text": "The crocodile can hold its breath for 15 minutes."
+        "name": "Prender a Respiração",
+        "text": "O crocodilo pode segurar sua respiração por 15 minutos can hold its breath for 15 minutes."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target",
-        "attack": "Bite|4|1d10+2"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., uma criatura. Acerto: 7 (1d10 + 2) dano perfurante, o alvo está agarrado (DC 12 para escapar). Até o agarrão terminar, a criatura estará impedida e o crocodilo não poderá morder outro alvo.",
+        "attack": "Mordida|4|1d10+2"
       }
     ],
-    "environments": ["Swamp", "Urban"]
+    "environments": ["Pântano", "Urbano"]
   },
   {
-    "name": "Deer",
+    "name": "Veado",
     "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6f055b11-30d4-4a48-85a1-774dc8d792cd/dfzftvi-b5a178b5-13fa-4b81-9614-b572da8e6168.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZmMDU1YjExLTMwZDQtNGE0OC04NWExLTc3NGRjOGQ3OTJjZFwvZGZ6ZnR2aS1iNWExNzhiNS0xM2ZhLTRiODEtOTYxNC1iNTcyZGE4ZTYxNjgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3SsuWMHoaX1KfaQZ0-6cbtmT7-LtK3jM45Kfdeujfls",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 4,
     "roll": "1d8",
     "ac": 13,
@@ -597,17 +597,17 @@ const beasts = [
     "cr": "0 ",
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.",
-        "attack": "Bite|2|1d4"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +2 para atingir, alcance 5 ft., um alvo. Acerto: 2 (1d4) de dano perfurante.",
+        "attack": "Mordida|2|1d4"
       }
     ],
-    "environments": ["Forest", "Grassland"]
+    "environments": ["Floresta", "Prado"]
   },
   {
-    "name": "Dire Wolf",
+    "name": "Lobo Atroz",
     "img": "https://www.dndbeyond.com/avatars/thumbnails/16/484/1000/1000/636376300478361995.jpeg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 37,
     "roll": "5d10 + 10",
     "ac": 14,
@@ -618,32 +618,32 @@ const beasts = [
     "int": 3,
     "wis": 12,
     "cha": 7,
-    "skills": "Perception +3, Stealth +4",
+    "skills": "Percepção +3, Furtividade +4",
     "passive": 13,
     "cr": "1 ",
     "traits": [
       {
-        "name": "Keen Hearing and Smell",
-        "text": "The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+        "name": "Audição e Faro aguçados",
+        "text": "O lobo tem vantagem em testes de Sabedoria (Percepção) relacionados à audição e ao olfato."
       },
       {
-        "name": "Pack Tactics",
-        "text": "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+        "name": "Táticas de grupo",
+        "text": "O lobo tem vantagem nas jogadas de ataque contra uma criatura se, pelo menos, um dos aliados do lobo estiver a 5ft da criaturas e não estiver incapacitado."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
-        "attack": "Bite|5|2d6+3"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 10 (2d6 + 3) de dano perfurante.  Se o alvo for uma criatura, ela deve ser bem sucedida num teste de resistência de DC 13  ou será derrubada no chão.",
+        "attack": "Mordida|5|2d6+3"
       }
     ],
-    "environments": ["Forest", "Hill"]
+    "environments": ["Floresta", "Colina"]
   },
   {
-    "name": "Draft Horse",
+    "name": "Cavalo de Carga",
     "img": "https://www.worldanvil.com/uploads/images/5e14d66a8f058cd5de447fa88d1107c1.jpeg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 19,
     "roll": "3d10 + 3",
     "ac": 10,
@@ -658,17 +658,17 @@ const beasts = [
     "cr": "1/4",
     "actions": [
       {
-        "name": "Hooves",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.",
-        "attack": "Hooves|6|2d4+4"
+        "name": "Cascos",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 5 ft., um alvo. Acerto: 9 (2d4 + 4) dano de concussão.",
+        "attack": "Cascos|6|2d4+4"
       }
     ],
-    "environments": ["Urban"]
+    "environments": ["Urbano"]
   },
   {
-    "name": "Eagle",
+    "name": "Águia",
     "img": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/16/515/1000/1000/636376317171111968.jpeg",
-    "size": "Small",
+    "size": "Pequeno",
     "hp": 3,
     "roll": "1d6",
     "ac": 12,
@@ -680,28 +680,28 @@ const beasts = [
     "int": 2,
     "wis": 14,
     "cha": 7,
-    "skills": "Perception +4",
+    "skills": "Percepção +4",
     "passive": 14,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Keen Sight",
-        "text": "The eagle has advantage on Wisdom (Perception) checks that rely on sight."
+        "name": "Visão aguçada",
+        "text": "A águia tem vantagem em Sabedoria (Percepção) que dependem da visão."
       }
     ],
     "actions": [
       {
-        "name": "Talons",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.",
-        "attack": "Talons|4|1d4+2"
+        "name": "Garras",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 4 (1d4 + 2) dano cortante.",
+        "attack": "Garras|4|1d4+2"
       }
     ],
-    "environments": ["Coastal", "Grassland", "Hill", "Mountain"]
+    "environments": ["Coastal", "Prado", "Colina", "Montanha"]
   },
   {
-    "name": "Elephant",
+    "name": "Elefante",
     "img": "https://dungeonedraghi.it/wp-content/uploads/2020/03/elefante.jpg",
-    "size": "Huge",
+    "size": "Enorme",
     "hp": 76,
     "roll": "8d12 + 24",
     "ac": 12,
@@ -716,28 +716,28 @@ const beasts = [
     "cr": "4 ",
     "traits": [
       {
-        "name": "Trampling Charge",
-        "text": "If the elephant moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the elephant can make one stomp attack against it as a bonus action."
+        "name": "Investida Esmagadora",
+        "text": "Se o elefante se mover, pelo menos, 20ft em linha reta em direção de uma criatura logo antes de atingi-la com seu ataque de presa, o alvo deve ser bem sucedido num teste de resistência de Força DC 16 para não cair no chão. Se o alvo cair no chão, o elefante pode realizar um ataque de pisotear contra ele com uma ação bônus."
       }
     ],
     "actions": [
       {
-        "name": "Gore",
-        "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) piercing damage.",
-        "attack": "Gore|8|3d8+5"
+        "name": "Presas",
+        "text": "Ataque corpo-a-corpo com arma: +8 para atingir, alcance 5 ft., um alvo. Acerto: 18 (3d8 + 5) de dano perfurante.",
+        "attack": "Presas|8|3d8+5"
       },
       {
-        "name": "Stomp",
-        "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one prone creature. Hit: 21 (3d10 + 5) bludgeoning damage.",
-        "attack": "Stomp|8|3d10+5"
+        "name": "Pisotear",
+        "text": "Ataque corpo-a-corpo com arma: +8 para atingir, alcance 5 ft., one prone creature. Acerto: 21 (3d10 + 5) dano de concussão.",
+        "attack": "Pisotear|8|3d10+5"
       }
     ],
-    "environments": ["Grassland"]
+    "environments": ["Prado"]
   },
   {
-    "name": "Elk",
+    "name": "Alce",
     "img": "https://www.worldanvil.com/uploads/images/d5f3ce423ba85ce8744e877772afed48.jpg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 13,
     "roll": "2d10 + 2",
     "ac": 10,
@@ -752,27 +752,27 @@ const beasts = [
     "cr": "1/4",
     "traits": [
       {
-        "name": "Charge",
-        "text": "If the elk moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
-        "attack": "Charge||2d6"
+        "name": "Investida",
+        "text": "Se o alce se mover, pelo menos, 6 metros em linha reta em direção de um alvo logo antes de atingi-lo com seu ataque de cabeçada, o alvo sofrerá 7 (2d6) de dano extra. Se o alvo for uma criatura, ele deve ser bem sucedido num teste de resistência de Força DC 13 para não cair no chão.",
+        "attack": "Investida||2d6"
       }
     ],
     "actions": [
       {
-        "name": "Ram",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage."
+        "name": "Cabeçada",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 6 (1d6 + 3) dano de concussão."
       },
       {
-        "name": "Hooves",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one prone creature. Hit: 8 (2d4 + 3) bludgeoning damage."
+        "name": "Cascos",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., one prone creature. Acerto: 8 (2d4 + 3) dano de concussão."
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill"]
+    "environments": ["Floresta", "Prado", "Colina"]
   },
   {
     "name": "Flying Snake",
     "img": "https://i.pinimg.com/564x/6f/6f/42/6f6f428370fe6815fb0418bebd393459.jpg",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 5,
     "roll": "2d4",
     "ac": 14,
@@ -785,28 +785,28 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 5,
-    "senses": "Blindsight 10 ft.",
+    "senses": "Percepção às cegas 10 ft.",
     "passive": 11,
     "cr": "1/8",
     "traits": [
       {
-        "name": "Flyby",
-        "text": "The snake doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+        "name": "Sobrevoo",
+        "text": "A cobra não provoca ataques de oportunidade quando voa para fora do alcance de um inimigo."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 7 (3d4) poison damage.",
-        "attack": "Bite|6|1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 5 ft., um alvo. Acerto: 1 dano perfurante plus 7 (3d4) dano de veneno.",
+        "attack": "Mordida|6|1"
       }
     ],
-    "environments": ["Desert", "Forest", "Grassland", "Urban"]
+    "environments": ["Deserto", "Floresta", "Prado", "Urbano"]
   },
   {
     "name": "Frog",
     "img": "https://thumbs.dreamstime.com/b/drawn-colored-cute-toad-frog-white-background-bufo-isolated-funny-adorable-soft-watercolor-art-illustration-278109874.jpg",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 1,
     "roll": "1d4-1",
     "ac": 11,
@@ -818,26 +818,26 @@ const beasts = [
     "int": 1,
     "wis": 8,
     "cha": 3,
-    "skills": "Perception +1, Stealth +3",
-    "senses": "Darkvision 30 ft.",
+    "skills": "Percepção +1, Furtividade +3",
+    "senses": "Visão no escuro 30 ft.",
     "passive": 11,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Amphibious",
-        "text": "The frog can breathe air and water"
+        "name": "Anfíbio",
+        "text": "The frog pode respirar ar e água."
       },
       {
-        "name": "Standing Leap",
-        "text": "The frog's long jump is up to 10 ft. and its high jump is up to 5 ft., with or without a running start."
+        "name": "Salto Parado",
+        "text": "O salto à distância do sapo vai até 10ft e o salto em altura vai até 5ft, com ou sem uma corrida inicial."
       }
     ],
     "environments": []
   },
   {
-    "name": "Giant Badger",
+    "name": "Texugo Gigante",
     "img": "https://www.worldanvil.com/uploads/images/dbc40679bc67d9022fbba2395774774e.jpg",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 13,
     "roll": "2d8 + 4",
     "ac": 10,
@@ -849,37 +849,37 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 5,
-    "senses": "Darkvision 30 ft.",
+    "senses": "Visão no escuro 30 ft.",
     "passive": 11,
     "cr": "1/4",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The badger has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "O texugo tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       }
     ],
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The badger makes two attacks: one with its bite and one with its claws."
+        "name": "Ataques múltiplos",
+        "text": "O texugo realiza dois ataques: um com sua mordida e um com suas garras"
       },
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.",
-        "attack": "Bite|3|1d6+1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 4 (1d6 + 1) de dano perfurante.",
+        "attack": "Mordida|3|1d6+1"
       },
       {
-        "name": "Claws",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage.",
-        "attack": "Claws|3|2d4+1"
+        "name": "Garras",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 6 (2d4 + 1) dano cortante.",
+        "attack": "Garras|3|2d4+1"
       }
     ],
-    "environments": ["Forest"]
+    "environments": ["Floresta"]
   },
   {
     "name": "Giant Bat",
     "img": "https://i.pinimg.com/1200x/50/3c/74/503c744179d2880f15a26b0fe7a42dc6.jpg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 22,
     "roll": "4d10",
     "ac": 13,
@@ -891,32 +891,32 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 6,
-    "senses": "Blindsight 60 ft.",
+    "senses": "Percepção às cegas 60 ft.",
     "passive": 11,
     "cr": "1/4",
     "traits": [
       {
-        "name": "Echolocation",
-        "text": "The bat can't use its blindsight while deafened."
+        "name": "Eco Localização",
+        "text": "Enquanto não puder ouvir, o mocergo perderá a percepção às cegas."
       },
       {
-        "name": "Keen Hearing",
-        "text": "The bat has advantage on Wisdom (Perception) checks that rely on hearing."
+        "name": "Audição aguçada",
+        "text": "O morcego tem vantagem em testes de Sabedoria (Percepção) relacionados à audição"
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
-        "attack": "Bite|4|1d6+2"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., uma criatura. Acerto: 5 (1d6 + 2) de dano perfurante.",
+        "attack": "Mordida|4|1d6+2"
       }
     ],
-    "environments": ["Forest", "Underdark"]
+    "environments": ["Floresta", "Underdark"]
   },
   {
-    "name": "Giant Boar",
+    "name": "Javali Gigante",
     "img": "https://i.pinimg.com/474x/34/72/33/3472332b715693d4471c7efdc89106a9.jpg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 42,
     "roll": "5d10 + 5",
     "ac": 12,
@@ -931,28 +931,28 @@ const beasts = [
     "cr": "2 ",
     "traits": [
       {
-        "name": "Charge",
-        "text": "If the boar moves at least 20 ft. straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
-        "attack": "Charge||2d6"
+        "name": "Investida",
+        "text": "Se o javali se mover, pelo menos, 20ft em linha reta em direção de uma criatura logo antes de atingi-la com seu ataque de presa, o alvo sofre 7 (2d6) de dano cortante extra e deve ser bem sucedido num teste de resistência de Força DC 13 para não cair no chão.",
+        "attack": "Investida||2d6"
       },
       {
-        "name": "Relentless (Recharges after a Short or Long Rest)",
-        "text": "If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+        "name": "Implacável (Recarrega após um Descanso Curto ou Longo)",
+        "text": "Se o javali sofrer 10 de dano ou menos, que o reduziria a 0 pontos de vida, ele é reduzido a 1 ponto de vida, no lugar."
       }
     ],
     "actions": [
       {
-        "name": "Tusk",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
-        "attack": "Tusk|5|2d6+3"
+        "name": "Presas",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 10 (2d6 + 3) dano cortante.",
+        "attack": "Presas|5|2d6+3"
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill"]
+    "environments": ["Floresta", "Prado", "Colina"]
   },
   {
-    "name": "Giant Centipede",
+    "name": "Centopeia Gigante",
     "img": "https://ironbombs.wordpress.com/wp-content/uploads/2014/03/giant-centipede-smaller.jpg",
-    "size": "Small",
+    "size": "Pequeno",
     "hp": 4,
     "roll": "1d6 + 1",
     "ac": 13,
@@ -964,22 +964,22 @@ const beasts = [
     "int": 1,
     "wis": 7,
     "cha": 3,
-    "senses": "Blindsight 30 ft.",
+    "senses": "Percepção às cegas 30 ft.",
     "passive": 8,
     "cr": "1/4",
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
-        "attack": "Bite|4|1d4+2"
+        "name": "Mordida",
+        "text": " Ataque Corpo-a-Corpo com Arma: +4 para atingir, alcance 1,5 m, uma criatura. Acerto: 4 (1d4 + 2) de dano perfurante e o alvo deve ser bem sucedido num teste de resistência de Constituição DC 11 ou sofrerá 10 (3d6) de dano de veneno. Se o veneno reduzir os pontos de vida do alvo a 0, ele fica estável mas envenenado por 1 hora, mesmo após recuperar pontos de vida, e fica paralisado enquanto estiver envenenado dessa forma.",
+        "attack": "Mordida|4|1d4+2"
       }
     ],
-    "environments": ["Underdark", "Urban"]
+    "environments": ["Underdark", "Urbano"]
   },
   {
-    "name": "Giant Constrictor Snake",
+    "name": "Cobra Constritora Gigante",
     "img": "https://www.epicpath.org/images/thumb/c/c2/Giant_Constrictor_Snake_1.jpg/600px-Giant_Constrictor_Snake_1.jpg",
-    "size": "Huge",
+    "size": "Enorme",
     "hp": 60,
     "roll": "8d12 + 8",
     "ac": 12,
@@ -991,28 +991,28 @@ const beasts = [
     "int": 1,
     "wis": 10,
     "cha": 3,
-    "skills": "Perception +2",
-    "senses": "Blindsight 10 ft.",
+    "skills": "Percepção +2",
+    "senses": "Percepção às cegas 10 ft.",
     "passive": 12,
     "cr": "2 ",
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one creature. Hit: 11 (2d6 + 4) piercing damage.",
-        "attack": "Bite|6|2d6+4"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 10 ft., uma criatura. Acerto: 11 (2d6 + 4) de dano perfurante.",
+        "attack": "Mordida|6|2d6+4"
       },
       {
-        "name": "Constrict",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 13 (2d8 + 4) bludgeoning damage, and the target is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.",
-        "attack": "Constrict|6|2d8+4"
+        "name": "Constrição",
+        "text": "Ataque Corpo-a-Corpo com Arma: +6 para atingir, alcance 1,5 m, uma criatura. Acerto: 13 (2d8 + 4) de dano de concussão e o alvo está agarrado (DC 16 para escapar). Até o agarrão terminar, a criatura estará impedida e a cobra não poderá constringir outro alvo.",
+        "attack": "Constrição|6|2d8+4"
       }
     ],
-    "environments": ["Desert", "Forest", "Swamp", "Underdark", "Underwater"]
+    "environments": ["Deserto", "Floresta", "Pântano", "Underdark", "Underwater"]
   },
   {
-    "name": "Giant Crab",
+    "name": "Caranguejo Gigante",
     "img": "https://2e.aonprd.com/Images/Monsters/Crab_GiantCrab.png",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 13,
     "roll": "3d8",
     "ac": 15,
@@ -1024,29 +1024,29 @@ const beasts = [
     "int": 1,
     "wis": 9,
     "cha": 3,
-    "skills": "Stealth +4",
-    "senses": "Blindsight 30 ft.",
+    "skills": "Furtividade +4",
+    "senses": "Percepção às cegas 30 ft.",
     "passive": 9,
     "cr": "1/8",
     "traits": [
       {
-        "name": "Amphibious",
-        "text": "The crab can breathe air and water."
+        "name": "Anfíbio",
+        "text": "O caranguejo pode respirar ar e água."
       }
     ],
     "actions": [
       {
-        "name": "Claw",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage, and the target is grappled (escape DC 11). The crab has two claws, each of which can grapple only one target.",
-        "attack": "Claw|3|1d6+1"
+        "name": "Garra",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 4 (1d6 + 1) dano de concussão, e o alvo fica agarrado (DC 11 para escapar). Se o caranguejo tiver duas garras, cada uma pode agarrar apenas um alvo.",
+        "attack": "Garra|3|1d6+1"
       }
     ],
     "environments": ["Coastal"]
   },
   {
-    "name": "Giant Crocodile",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/2/27/Crocodile.jpeg/revision/latest?cb=20190624075223",
-    "size": "Huge",
+    "name": "Crocodilo Gigante",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/2/27/Crocodile.jpeg",
+    "size": "Enorme",
     "hp": 85,
     "roll": "9d12 + 27",
     "ac": 14,
@@ -1058,37 +1058,37 @@ const beasts = [
     "int": 2,
     "wis": 10,
     "cha": 7,
-    "skills": "Stealth +5",
+    "skills": "Furtividade +5",
     "passive": 10,
     "cr": "5 ",
     "traits": [
       {
-        "name": "Hold Breath",
-        "text": "The crocodile can hold its breath for 30 minutes."
+        "name": "Prender a Respiração",
+        "text": "O crocodilo consegue prender sua respiração por 30 minutos."
       }
     ],
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The crocodile makes two attacks: one with its bite and one with its tail."
+        "name": "Ataques múltiplos",
+        "text": "O crocodilo realiza dois ataques: um com sua mordida e um com sua cauda."
       },
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 21 (3d10 + 5) piercing damage, and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.",
-        "attack": "Bite|8|3d10+5"
+        "name": "Mordida",
+        "text": "Ataque Corpo-a-Corpo com Arma: +8 para atingir, alcance 5ft, um alvo. Acerto: 21 (3d10 + 5) de dano perfurante  e o alvo está agarrado (DC 16 para escapar). Até o agarrão terminar, a criatura estará impedida e o crocodilo não poderá morder outro alvo.",
+        "attack": "Mordida|8|3d10+5"
       },
       {
-        "name": "Tail",
-        "text": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target not grappled by the crocodile. Hit: 14 (2d8 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone.",
-        "attack": "Tail|8|2d8+5"
+        "name": "Cauda",
+        "text": "Ataque corpo-a-corpo com arma: +8 para atingir, alcance 10 ft., um alvoque não esteja agarrado pelo crocodilo. Acerto: 14 (2d8 + 5) dano de concussão.  Se o alvo for uma criatura, ela deve ser bem sucedida num teste de resistência de DC 16  ou será derrubada no chão.",
+        "attack": "Cauda|8|2d8+5"
       }
     ],
-    "environments": ["Swamp"]
+    "environments": ["Pântano"]
   },
   {
-    "name": "Giant Eagle",
+    "name": "Águia Gigante",
     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVqo4qH0YVzKbvfR2GqBakiJPSGjv3nrZjl879klOjpw&s",
-    "size": "Large",
+    "size": "Grande",
     "hp": 26,
     "roll": "4d10 + 4",
     "ac": 13,
@@ -1100,37 +1100,37 @@ const beasts = [
     "int": 8,
     "wis": 14,
     "cha": 10,
-    "skills": "Perception +4",
+    "skills": "Percepção +4",
     "passive": 14,
     "cr": "1 ",
     "traits": [
       {
-        "name": "Keen Sight",
-        "text": "The eagle has advantage on Wisdom (Perception) checks that rely on sight."
+        "name": "Visão aguçada",
+        "text": "A águia tem vantagem em Sabedoria (Percepção) relacionados à visão."
       }
     ],
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The eagle makes two attacks: one with its beak and one with its talons."
+        "name": "Ataques múltiplos",
+        "text": "A águia realiza dois ataques: um com sua bicada e um com suas garras."
       },
       {
-        "name": "Beak",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
-        "attack": "Beak|5|1d6+3"
+        "name": "Bicada",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 6 (1d6 + 3) de dano perfurante.",
+        "attack": "Bicada|5|1d6+3"
       },
       {
-        "name": "Talons",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
-        "attack": "Talons|5|2d6+3"
+        "name": "Garras",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 10 (2d6 + 3) dano cortante.",
+        "attack": "Garras|5|2d6+3"
       }
     ],
-    "environments": ["Coastal", "Grassland", "Hill", "Mountain"]
+    "environments": ["Coastal", "Prado", "Colina", "Montanha"]
   },
   {
-    "name": "Giant Elk",
-    "img": "https://static.wikia.nocookie.net/novum-terram/images/e/e1/Eucladoceros_%28SciiFii%29.png/revision/latest/scale-to-width-down/412?cb=20200617032245",
-    "size": "Huge",
+    "name": "Alce Gigante",
+    "img": "https://static.wikia.nocookie.net/novum-terram/images/e/e1/Eucladoceros_%28SciiFii%29.png",
+    "size": "Enorme",
     "hp": 42,
     "roll": "5d12 + 10",
     "ac": 15,
@@ -1141,34 +1141,34 @@ const beasts = [
     "int": 7,
     "wis": 14,
     "cha": 10,
-    "skills": "Perception +4",
+    "skills": "Percepção +4",
     "passive": 14,
     "cr": "2 ",
     "traits": [
       {
-        "name": "Charge",
-        "text": "If the elk moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.",
-        "attack": "Charge||2d6"
+        "name": "Investida",
+        "text": "Se o alce se mover, pelo menos, 20ft em linha reta em direção de um alvo logo antes de atingi-lo com seu ataque de  cabeçada, o alvo sofrerá 7 (2d6) de dano extra. Se o alvo for uma criatura, ele deve ser bem sucedido num teste de resistência de Força DC 14 para não cair no chão.",
+        "attack": "Investida||2d6"
       }
     ],
     "actions": [
       {
-        "name": "Ram",
-        "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
-        "attack": "Ram|6|2d6+4"
+        "name": "Cabeçada",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 10 ft., um alvo. Acerto: 11 (2d6 + 4) dano de concussão.",
+        "attack": "Cabeçada|6|2d6+4"
       },
       {
-        "name": "Hooves",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one prone creature. Hit: 22 (4d8 + 4) bludgeoning damage.",
-        "attack": "Hooves|6|4d8+4"
+        "name": "Cascos",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 5 ft., one prone creature. Acerto: 22 (4d8 + 4) dano de concussão.",
+        "attack": "Cascos|6|4d8+4"
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill", "Mountain"]
+    "environments": ["Floresta", "Prado", "Colina", "Montanha"]
   },
   {
-    "name": "Giant Fire Beetle",
+    "name": "Besouro de Fogo Gigante",
     "img": "https://www.dndbeyond.com/avatars/thumbnails/9/896/1000/1000/636334287498492864.jpeg",
-    "size": "Small",
+    "size": "Pequeno",
     "hp": 4,
     "roll": "1d6 + 1",
     "ac": 13,
@@ -1179,28 +1179,28 @@ const beasts = [
     "int": 1,
     "wis": 7,
     "cha": 3,
-    "senses": "Blindsight 30 ft.",
+    "senses": "Percepção às cegas 30 ft.",
     "passive": 8,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Illumination",
-        "text": "The beetle sheds bright light in a 10-foot radius and dim light for an additional 10 ft.."
+        "name": "Iluminação",
+        "text": "O besouro emite luz plena num raio de 10 ft e penumbra por mais 10 ft adicionais."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) slashing damage.",
-        "attack": "Bite|1|1d6-1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +1 para atingir, alcance 5 ft., um alvo. Acerto: 2 (1d6 - 1) dano cortante.",
+        "attack": "Mordida|1|1d6-1"
       }
     ],
     "environments": ["Underdark"]
   },
   {
-    "name": "Giant Fly",
-    "img": "https://static.wikia.nocookie.net/pathfinder/images/5/54/Giant_fly_and_maggot.jpg/revision/latest?cb=20081002140048",
-    "size": "Large",
+    "name": "Mosca Gigante",
+    "img": "https://static.wikia.nocookie.net/pathfinder/images/5/54/Giant_fly_and_maggot.jpg",
+    "size": "Grande",
     "hp": 19,
     "roll": "3d10 + 3",
     "ac": 11,
@@ -1212,15 +1212,15 @@ const beasts = [
     "int": 2,
     "wis": 10,
     "cha": 3,
-    "senses": "Darkvision 60 ft.",
+    "senses": "Visão no escuro 60 ft.",
     "passive": 10,
     "cr": "0 ",
     "environments": []
   },
   {
-    "name": "Giant Frog",
+    "name": "Rã Gigante",
     "img": "https://i.pinimg.com/736x/b4/83/00/b4830019252d6014554aacc7f513437e.jpg",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 18,
     "roll": "4d8",
     "ac": 11,
@@ -1232,37 +1232,37 @@ const beasts = [
     "int": 2,
     "wis": 10,
     "cha": 3,
-    "skills": "Perception +2, Stealth +3",
-    "senses": "Darkvision 30 ft.",
+    "skills": "Percepção +2, Furtividade +3",
+    "senses": "Visão no escuro 30 ft.",
     "passive": 12,
     "cr": "1/4",
     "traits": [
       {
-        "name": "Amphibious",
-        "text": "The frog can breathe air and water"
+        "name": "Anfíbio",
+        "text": "A rã pode respirar ar e água."
       },
       {
-        "name": "Standing Leap",
-        "text": "The frog's long jump is up to 20 ft. and its high jump is up to 10 ft., with or without a running start."
+        "name": "Salto Parado",
+        "text": "O salto à distância da rã vai até 20 ft e o salto em altura vai até 10 ft, com ou sem uma corrida inicial."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage, and the target is grappled (escape DC 11). Until this grapple ends, the target is restrained, and the frog can't bite another target.",
-        "attack": "Bite|3|1d6+1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 4 (1d6 + 1) dano perfurante,  o alvo fica agarrado (DC 13 para escapar). Até o agarrão acabar, o alvo fica impedido e a rã não pode morder outro alvo.",
+        "attack": "Mordida|3|1d6+1"
       },
       {
-        "name": "Swallow",
-        "text": "The frog makes one bite attack against a Small or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the frog, and it takes 5 (2d4) acid damage at the start of each of the frog's turns. The frog can have only one target swallowed at a time. If the frog dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 ft. of movement, exiting prone."
+        "name": "Engolir",
+        "text": "A rã realiza um ataque de mordida contra um alvo Médio ou menor que esteja agarrando. Se o ataque atingir, o alvo é engolido e o agarrão termina. Enquanto estiver engolido, o alvo estará cego e impedido, ele terá cobertura total contra ataques e outros efeitos de fora da rã e sofre 10 (3d6) de dano ácido no começo de cada turno da rã. A rã pode ter apenas um alvo engolido por vez. \nSe a rã morrer, uma criatura engolida não estará mais impedida por ela e poderá escapar do corpo usando 1,5 metro de movimento, estando caída ao sair."
       }
     ],
-    "environments": ["Forest", "Swamp"]
+    "environments": ["Floresta", "Pântano"]
   },
   {
-    "name": "Giant Goat",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7e/Giant_ram_5e.png/revision/latest?cb=20230821073121",
-    "size": "Large",
+    "name": "Bode Gigante",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/7/7e/Giant_ram_5e.png",
+    "size": "Grande",
     "hp": 19,
     "roll": "3d10 + 3",
     "ac": 11,
@@ -1277,28 +1277,28 @@ const beasts = [
     "cr": "1/2",
     "traits": [
       {
-        "name": "Charge",
-        "text": "If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
-        "attack": "Charge||2d4"
+        "name": "Investida",
+        "text": "Se o bode se mover, pelo menos, 20ft em linha reta em direção de uma criatura logo antes de atingi-la com seu ataque de cabeçada, o alvo sofre 5 (2d4) de dano de concussão extra. Se o alvo for uma criatura, ele deve ser bem sucedido num teste de resistência de Força DC 13 para não cair no chão.",
+        "attack": "Investida||2d4"
       },
       {
-        "name": "Sure-Footed",
-        "text": "The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+        "name": "Estável",
+        "text": "O bode possui vantagem em testes de resistência de Força e Destreza feitos contra efeitos que poderiam derruba-lo no chão."
       }
     ],
     "actions": [
       {
-        "name": "Ram",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.",
-        "attack": "Ram|5|2d4+3"
+        "name": "Cabeçada",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 8 (2d4 + 3) dano de concussão.",
+        "attack": "Cabeçada|5|2d4+3"
       }
     ],
-    "environments": ["Grassland", "Hill", "Mountain"]
+    "environments": ["Prado", "Colina", "Montanha"]
   },
   {
-    "name": "Giant Hyena",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8d/Hyena_4e.jpg/revision/latest?cb=20200311072705",
-    "size": "Large",
+    "name": "Hiena Gigante",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/8/8d/Hyena_4e.jpg",
+    "size": "Grande",
     "hp": 45,
     "roll": "6d10 + 12",
     "ac": 12,
@@ -1309,28 +1309,28 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 7,
-    "skills": "Perception +3",
+    "skills": "Percepção +3",
     "passive": 13,
     "cr": "1 ",
     "traits": [
       {
-        "name": "Rampage",
-        "text": "When the hyena reduces a creature to 0 hit points with a melee attack on its turn, the hyena can take a bonus action to move up to half its speed and make a bite attack."
+        "name": "Frenesi",
+        "text": "Quando a hiena reduz uma criatura a 0 pontos de vida com um ataque corpo-a-corpo no seu turno, ela pode realizar uma ação bônus para se mover até metade do seu deslocamento e realizar um ataque de mordida"
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.",
-        "attack": "Bite|5|1d6+3"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 10 (2d6 + 3) de dano perfurante.",
+        "attack": "Mordida|5|1d6+3"
       }
     ],
-    "environments": ["Desert", "Forest", "Grassland", "Hill"]
+    "environments": ["Deserto", "Floresta", "Prado", "Colina"]
   },
   {
-    "name": "Giant Lizard",
+    "name": "Lagarto Gigante",
     "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6f055b11-30d4-4a48-85a1-774dc8d792cd/dg1l1gs-60e45388-f3b8-4da4-857d-4d880d30edf3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZmMDU1YjExLTMwZDQtNGE0OC04NWExLTc3NGRjOGQ3OTJjZFwvZGcxbDFncy02MGU0NTM4OC1mM2I4LTRkYTQtODU3ZC00ZDg4MGQzMGVkZjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AOag1I3HCpawqNOiwBODFGFIrZCf60CqJrL8LwW_kh0",
-    "size": "Large",
+    "size": "Grande",
     "hp": 19,
     "roll": "3d10 + 3",
     "ac": 12,
@@ -1342,32 +1342,32 @@ const beasts = [
     "int": 2,
     "wis": 10,
     "cha": 5,
-    "senses": "Darkvision 30 ft.",
+    "senses": "Visão no escuro 30 ft.",
     "passive": 10,
     "cr": "1/4",
     "traits": [
       {
-        "name": "Variant: Hold Breath",
-        "text": "The lizard can hold its breath for 15 minutes. (A lizard that has this trait also has a swimming speed of 30 feet.)"
+        "name": "Variante: Prender a Respiração",
+        "text": "O lagarto pode prender a respiração por 15 minutos (um lagarto que possua esse traço também terá um deslocamento de natação de 30ft)"
       },
       {
-        "name": "Variant: Spider Climb",
-        "text": "The lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+        "name": "Variante: Escalada Aracnídea",
+        "text": "O lagarto pode escalar superfícies difíceis, incluindo andar de cabeça para baixo em tetos, sem precisar realizar um teste de habilidade."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
-        "attack": "Bite|4|1d8+2"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 6 (1d8 + 2) de dano perfurante.",
+        "attack": "Mordida|4|1d8+2"
       }
     ],
-    "environments": ["Coastal", "Desert", "Forest", "Swamp", "Underdark"]
+    "environments": ["Coastal", "Deserto", "Floresta", "Pântano", "Underdark"]
   },
   {
-    "name": "Giant Octopus",
+    "name": "Polvo Gigante",
     "img": "https://2e.aonprd.com/Images/Monsters/OctopusGiant.png",
-    "size": "Large",
+    "size": "Grande",
     "hp": 52,
     "roll": "8d10 + 8",
     "ac": 11,
@@ -1379,41 +1379,41 @@ const beasts = [
     "int": 4,
     "wis": 10,
     "cha": 4,
-    "skills": "Perception +4, Stealth +5",
-    "senses": "Darkvision 60 ft.",
+    "skills": "Percepção +4, Furtividade +5",
+    "senses": "Visão no escuro 60 ft.",
     "passive": 14,
     "cr": "1 ",
     "traits": [
       {
-        "name": "Hold Breath",
-        "text": "While out of water, the octopus can hold its breath for 1 hour."
+        "name": "Prender a Respiração",
+        "text": "Enquanto estiver fora da água, o polvo pode prender a respiração por 1 hora"
       },
       {
-        "name": "Underwater Camouflage",
-        "text": "The octopus has advantage on Dexterity (Stealth) checks made while underwater."
+        "name": "Camuflagem Submersa",
+        "text": "O polvo tem vantagem em testes de Destreza (Furtividade) feitos enquanto estiver submerso."
       },
       {
-        "name": "Water Breathing",
-        "text": "The octopus can breathe only underwater."
+        "name": "Respirar na Água",
+        "text": "O polvo pode respirar apenas em baixo d’água."
       }
     ],
     "actions": [
       {
-        "name": "Tentacles",
-        "text": "Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can't use its tentacles on another target.",
-        "attack": "Tentacles|5|2d6+3"
+        "name": "Tentáculos",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 15 ft., um alvo. Acerto: 10 (2d6 + 3) dano de concussãoe o alvo fica agarrado (DC 16 para escapar). Até o agarrão acabar, o alvo fica impedido e o polvo não pode usar seus tentáculos em outro alvo.",
+        "attack": "Tentáculos|5|2d6+3"
       },
       {
-        "name": "Ink Cloud (Recharges after a Short or Long Rest)",
-        "text": "A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action."
+        "name": "Nuvem de Tinta (Recarrega após um Descanso Curto ou Longo)",
+        "text": "Uma nuvem de tinta de 20ft de raio se espalha em volta do polvo, se ele estiver submerso. A área fica com escuridão densa por 1 minuto, no entanto, uma corrente forte pode dispersar a tinta. Após liberar a tinta, o polvo pode usar a ação de Disparada com uma ação bônus."
       }
     ],
     "environments": ["Underwater"]
   },
   {
-    "name": "Giant Owl",
-    "img": "https://static.wikia.nocookie.net/dungeonsdragons/images/b/b3/Giantowl.jpg/revision/latest?cb=20120410042459",
-    "size": "Large",
+    "name": "Coruja Gigante",
+    "img": "https://static.wikia.nocookie.net/dungeonsdragons/images/b/b3/Giantowl.jpg",
+    "size": "Grande",
     "hp": 19,
     "roll": "3d10 + 3",
     "ac": 12,
@@ -1425,33 +1425,33 @@ const beasts = [
     "int": 8,
     "wis": 13,
     "cha": 10,
-    "skills": "Perception +5, Stealth +4",
-    "senses": "Darkvision 120 ft.",
+    "skills": "Percepção +5, Furtividade +4",
+    "senses": "Visão no escuro 120 ft.",
     "passive": 15,
     "cr": "1/4",
     "traits": [
       {
-        "name": "Flyby",
-        "text": "The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+        "name": "Sobrevoo",
+        "text": "A coruja não provoca ataques de oportunidade quando voa para fora do alcance de um inimigo."
       },
       {
-        "name": "Keen Hearing and Sight",
-        "text": "The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+        "name": "Audição e visão aguçados",
+        "text": "A coruja tem vantagem em testes de Sabedoria (Percepção) relacionados à visão e à audição."
       }
     ],
     "actions": [
       {
-        "name": "Talons",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) slashing damage.",
-        "attack": "Talons|3|2d6+1"
+        "name": "Garras",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 8 (2d6 + 1) dano cortante.",
+        "attack": "Garras|3|2d6+1"
       }
     ],
-    "environments": ["Arctic", "Forest", "Hill"]
+    "environments": ["Arctic", "Floresta", "Colina"]
   },
   {
-    "name": "Giant Poisonous Snake",
-    "img": "https://static.wikia.nocookie.net/dungeonsdragons/images/b/b3/Giantowl.jpg/revision/latest?cb=20120410042459",
-    "size": "Medium",
+    "name": "Serpente Venenosa Gigante",
+    "img": "https://static.wikia.nocookie.net/dungeonsdragons/images/b/b3/Giantowl.jpg",
+    "size": "Médio",
     "hp": 11,
     "roll": "2d8 + 2",
     "ac": 14,
@@ -1463,23 +1463,23 @@ const beasts = [
     "int": 2,
     "wis": 10,
     "cha": 3,
-    "skills": "Perception +2",
-    "senses": "Blindsight 10 ft.",
+    "skills": "Percepção +2",
+    "senses": "Percepção às cegas 10 ft.",
     "passive": 12,
     "cr": "1/4",
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d4 + 4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
-        "attack": "Bite|6|1d4+4"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 10 ft., um alvo. Acerto: 6 (1d4 + 4) dano perfurante, e o alvo deve realizar um teste de resistência de Constituição DC 11, sofrendo 10 (3d6) de dano de veneno se falhar na resistência ou metade desse dano se obtiver sucesso.",
+        "attack": "Mordida|6|1d4+4"
       }
     ],
-    "environments": ["Desert", "Forest", "Grassland", "Swamp", "Underdark", "Urban"]
+    "environments": ["Deserto", "Floresta", "Prado", "Pântano", "Underdark", "Urbano"]
   },
   {
-    "name": "Giant Rat",
+    "name": "Rato Gigante",
     "img": "https://i.pinimg.com/originals/0b/7b/ed/0b7bedcb3236805cbe5a6d7274516fb0.png",
-    "size": "Small",
+    "size": "Pequeno",
     "hp": 7,
     "roll": "2d6",
     "ac": 12,
@@ -1490,32 +1490,32 @@ const beasts = [
     "int": 2,
     "wis": 10,
     "cha": 4,
-    "senses": "Darkvision 60 ft.",
+    "senses": "Visão no escuro 60 ft.",
     "passive": 10,
     "cr": "1/8",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The rat has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "O rato tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       },
       {
-        "name": "Pack Tactics",
-        "text": "The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+        "name": "Táticas de grupo",
+        "text": "O rato tem vantagem nas jogadas de ataque contra uma criatura se, pelo menos, um dos aliados do rato estiver a 5ft da criaturas e não estiver incapacitado."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
-        "attack": "Bite|4|1d4+2"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 4 (1d4 + 2) de dano perfurante.",
+        "attack": "Mordida|4|1d4+2"
       }
     ],
-    "environments": ["Forest", "Swamp", "Underdark", "Urban"]
+    "environments": ["Floresta", "Pântano", "Underdark", "Urbano"]
   },
   {
-    "name": "Giant Rat (Diseased)",
+    "name": "Rato Gigante (Infectado)",
     "img": "https://64.media.tumblr.com/3e95f33eafe06bac8a7a76641fb7496a/tumblr_nsgi08jVv81uqhshmo1_540.png",
-    "size": "Small",
+    "size": "Pequeno",
     "hp": 7,
     "roll": "2d6",
     "ac": 12,
@@ -1526,22 +1526,24 @@ const beasts = [
     "int": 2,
     "wis": 10,
     "cha": 4,
-    "senses": "Darkvision 60 ft.",
+    "senses": "Visão no escuro 60 ft.",
     "passive": 10,
     "cr": "1/8",
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage. If the target is a creature, it must succeed on a DC 10 Constitution saving throw or contract a disease. Until the disease is cured, the target can't regain hit points except by magical means, and the target's hit point maximum decreases by 3 (1d6) every 24 hours. If the target's hit point maximum drops to 0 as a result of this disease, the target dies.",
-        "attack": "Bite|3|1d4+1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 3 (1d4 + 1) de dano perfurante.  Se o alvo for uma criatura, ele deve ser bem sucedido num teste de resistência de Constituição DC 10 ou contrairá uma doença. Até a doença ser curada, o alvo não pode recuperar pontos de vida, exceto por meios mágicos, e o máximo de pontos de vida do alvo é reduzido em 3 (1d6) a cada 24 horas. Se o máximo de pontos de vida do alvo cair a 0 com resultado dessa doença, ele morre.",
+        "attack": "Mordida|3|1d4+1"
       }
     ],
     "environments": []
   },
+
+  //Parei aqui
   {
-    "name": "Giant Scorpion",
+    "name": "Escorpião Gigante",
     "img": "https://angrygolem-games.com/wp-content/uploads/2021/11/Giant-Scorpion.jpg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 52,
     "roll": "7d10 + 14",
     "ac": 15,
@@ -1552,31 +1554,31 @@ const beasts = [
     "int": 1,
     "wis": 9,
     "cha": 3,
-    "senses": "Blindsight 60 ft.",
+    "senses": "Percepção às cegas 60 ft.",
     "passive": 9,
     "cr": "3 ",
     "actions": [
       {
-        "name": "Claw",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 12). The scorpion has two claws, each of which can grapple only one target.",
-        "attack": "Claw|4|1d8+2"
+        "name": "Garra",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 6 (1d8 + 2) dano de concussão,  e o alvo fica agarrado (DC 12 para escapar). O escorpião possui duas garras, cada uma podendo agarrar apenas um alvo.",
+        "attack": "Garra|4|1d8+2"
       },
       {
-        "name": "Multiattack",
-        "text": "The scorpion makes three attacks: two with its claws and one with its sting."
+        "name": "Ataques múltiplos",
+        "text": "O escorpião realiza três ataques: dois com suas garras e um com seu ferrão."
       },
       {
-        "name": "Sting",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 22 (4d10) poison damage on a failed save, or half as much damage on a successful one.",
-        "attack": "Sting|4|1d10+2"
+        "name": "Ferrão",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., uma criatura. Acerto: 7 (1d10 + 2) dano perfurante, alvo deve realizar um teste de resistência de Constituição DC 12, sofrendo 22 (4d10) de dano de veneno se fracassar na resistência, ou metade desse dano se obtiver sucesso.",
+        "attack": "Ferrão|4|1d10+2"
       }
     ],
-    "environments": ["Desert"]
+    "environments": ["Deserto"]
   },
   {
-    "name": "Giant Sea Horse",
-    "img": "https://static.wikia.nocookie.net/wowpedia/images/6/6e/Seahorse.png/revision/latest?cb=20100806205450",
-    "size": "Large",
+    "name": "Cavalo Marinho Gigante",
+    "img": "https://static.wikia.nocookie.net/wowpedia/images/6/6e/Seahorse.png",
+    "size": "Grande",
     "hp": 16,
     "roll": "3d10",
     "ac": 13,
@@ -1592,28 +1594,28 @@ const beasts = [
     "cr": "1/2",
     "traits": [
       {
-        "name": "Charge",
-        "text": "If the sea horse moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
-        "attack": "Charge||2d6"
+        "name": "Investida",
+        "text": "Se o cavalo marinho se mover, pelo menos, 6 metros em linha reta em direção de uma criatura logo antes de atingi-la com seu ataque de cabeçada, o alvo sofre 7 (2d6) de dano de concussão extra. Se o alvo for uma criatura, ele deve ser bem sucedido num teste de resistência de Força DC 11 para não cair no chão.",
+        "attack": "Investida||2d6"
       },
       {
-        "name": "Water Breathing",
-        "text": "The sea horse can breathe only underwater."
+        "name": "Respirar na Água",
+        "text": "O cavalo marinho pode respirar apenas em baixo d’água."
       }
     ],
     "actions": [
       {
-        "name": "Ram",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.",
+        "name": "Cabeçada",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 4 (1d6 + 1) dano de concussão.",
         "attack": "|3|1d6+1"
       }
     ],
     "environments": ["Underwater"]
   },
   {
-    "name": "Giant Shark",
+    "name": "Tubarão Gigante",
     "img": "https://angrygolem-games.com/wp-content/uploads/2021/10/Giant-Shark.jpg",
-    "size": "Huge",
+    "size": "Enorme",
     "hp": 126,
     "roll": "11d12 + 55",
     "ac": 13,
@@ -1625,33 +1627,33 @@ const beasts = [
     "int": 1,
     "wis": 10,
     "cha": 5,
-    "skills": "Perception +3",
-    "senses": "Blindsight 60 ft.",
+    "skills": "Percepção +3",
+    "senses": "Percepção às cegas 60 ft.",
     "passive": 13,
     "cr": "5 ",
     "traits": [
       {
-        "name": "Blood Frenzy",
-        "text": "The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+        "name": "Frenesi de Sangue",
+        "text": "O tubarão tem vantagem nas jogadas de ataque corpo-a-corpo contra qualquer criatura que não esteja com todos os seus pontos de vida."
       },
       {
-        "name": "Water Breathing",
-        "text": "The shark can breathe only underwater."
+        "name": "Respirar na Água",
+        "text": "O tubarão pode respirar apenas em baixo d’água."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 22 (3d10 + 6) piercing damage.",
-        "attack": "Bite|9|3d10+6"
+        "name": "Mordida",
+        "text": "Ataque Corpo-a-Corpo com Arma: +9 para atingir, alcance 5 ft., um alvo. Acerto: 22 (3d10 + 6) de dano perfurante.",
+        "attack": "Mordida|9|3d10+6"
       }
     ],
     "environments": ["Underwater"]
   },
   {
-    "name": "Giant Spider",
+    "name": "Aranha Gigante",
     "img": "https://www.dndbeyond.com/avatars/thumbnails/30849/299/1000/1000/638064499038216933.png",
-    "size": "Large",
+    "size": "Grande",
     "hp": 26,
     "roll": "4d10 + 4",
     "ac": 14,
@@ -1663,42 +1665,42 @@ const beasts = [
     "int": 2,
     "wis": 11,
     "cha": 4,
-    "skills": "Stealth +7",
-    "senses": "Blindsight 10 ft., Darkvision 60 ft.",
+    "skills": "Furtividade +7",
+    "senses": "Percepção às cegas 10 ft., Visão no escuro 60 ft.",
     "passive": 10,
     "cr": "1 ",
     "traits": [
       {
-        "name": "Spider Climb",
-        "text": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+        "name": "Escalada Aracnídea",
+        "text": "A aranha pode escalar superfícies difíceis, incluindo andar de cabeça para baixo em tetos, sem precisar realizar um teste de habilidade."
       },
       {
-        "name": "Web Sense",
-        "text": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+        "name": "Sentido na Teia",
+        "text": "Quando em contato com uma teia, a aranha sabe a localização exata de qualquer outra criatura em contato com a mesma teia"
       },
       {
-        "name": "Web Walker",
-        "text": "The spider ignores movement restrictions caused by webbing."
+        "name": "Andar na Teia",
+        "text": "A aranha  ignora restrições de movimento causadas por estar numa teia."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 9 (2d8) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
-        "attack": "Bite|5|1d8+3"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., uma criatura. Acerto: 7 (1d8 + 3) dano perfurante, e o alvo deve realizar um teste de resistência de Constituição DC 11, sofrendo 9 (2d8) de dano de veneno se falhar na resistência ou metade desse dano se obtiver sucesso. Se o dano de veneno reduzir o alvo a 0 pontos de vida, o alvo estará estável, porém, envenenado, por 1 hora e paralisado enquanto estiver envenenado dessa forma.",
+        "attack": "Mordida|5|1d8+3"
       },
       {
-        "name": "Web (Recharge 5-6)",
-        "text": "Ranged Weapon Attack: +5 to hit, range 30/60 ft., one creature. Hit: The target is restrained by webbing. As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).",
-        "attack": "Web|5|0"
+        "name": "Teia (Recarga 5-6)",
+        "text": "Ataque à Distância com Arma: +5 para atingir, alcance 30ft/60ft, uma criatura. Acerto: O alvo ficará impedido pela teia. Com uma ação, o alvo impedido pode realizar um teste de Força DC 12, rompendo a teia com sucesso. A teia também pode ser atacada e destruída (CA 10; 5 pv; vulnerabilidade a fogo; imune a dano de concussão, veneno e psíquico).",
+        "attack": "Teia|5|0"
       }
     ],
-    "environments": ["Desert", "Forest", "Swamp", "Underdark", "Urban"]
+    "environments": ["Deserto", "Floresta", "Pântano", "Underdark", "Urbano"]
   },
   {
-    "name": "Giant Toad",
+    "name": "Sapo Gigante",
     "img": "https://i.imgur.com/10l9yX9.png",
-    "size": "Large",
+    "size": "Grande",
     "hp": 39,
     "roll": "6d10 + 6",
     "ac": 11,
@@ -1710,36 +1712,36 @@ const beasts = [
     "int": 2,
     "wis": 10,
     "cha": 3,
-    "senses": "Darkvision 30 ft.",
+    "senses": "Visão no escuro 30 ft.",
     "passive": 10,
     "cr": "1 ",
     "traits": [
       {
-        "name": "Amphibious",
-        "text": "The toad can breathe air and water"
+        "name": "Anfíbio",
+        "text": "O sapo pode respirar ar e água."
       },
       {
-        "name": "Standing Leap",
-        "text": "The toad's long jump is up to 20 ft. and its high jump is up to 10 ft., with or without a running start."
+        "name": "Salto Parado",
+        "text": "O salto à distância do sapo vai até 20 ft. e o salto em altura vai até  10 ft., com ou sem uma corrida inicial."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 5 (1d10) poison damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the toad can't bite another target.",
-        "attack": "Bite|4|1d10+2"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 7 (1d10 + 2) dano perfurante + 5 (1d10) de dano de veneno e o alvo fica agarrado (DC 13 para escapar). Até o agarrão acabar, o alvo fica impedido e o sapo não pode morder outro alvo",
+        "attack": "Mordida|4|1d10+2"
       },
       {
-        "name": "Swallow",
-        "text": "The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.\nIf the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone."
+        "name": "Engolir",
+        "text": "O sapo realiza um ataque de mordida contra um alvo Médio ou menor que esteja agarrando. Se o ataque atingir, o alvo é engolido e o agarrão termina. Enquanto estiver engolido, o alvo estará cego e impedido, ele terá cobertura total contra ataques e outros efeitos de fora do sapo e sofre 10 (3d6) de dano ácido no começo de cada turno do sapo. O sapo pode ter apenas um alvo engolido por vez. Se o sapo morrer, uma criatura engolida não estará mais impedida por ele e poderá escapar do corpo usando 1,5 metro de movimento, estando caída ao sair."
       }
     ],
-    "environments": ["Coastal", "Desert", "Forest", "Swamp", "Underdark"]
+    "environments": ["Coastal", "Deserto", "Floresta", "Pântano", "Underdark"]
   },
   {
-    "name": "Giant Vulture",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c4/Giantvulture.jpg/revision/latest/scale-to-width-down/1200?cb=20200220162139",
-    "size": "Large",
+    "name": "Abutre Gigante",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c4/Giantvulture.jpg",
+    "size": "Grande",
     "hp": 22,
     "roll": "3d10 + 6",
     "ac": 10,
@@ -1751,41 +1753,41 @@ const beasts = [
     "int": 6,
     "wis": 12,
     "cha": 7,
-    "skills": "Perception +3",
+    "skills": "Percepção +3",
     "passive": 13,
     "cr": "1 ",
     "traits": [
       {
-        "name": "Keen Sight and Smell",
-        "text": "The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell."
+        "name": "Visão e Faro aguçados",
+        "text": "O abutre tem vantagem em testes de Sabedoria (Percepção) relacionados à visão e ao olfato."
       },
       {
-        "name": "Pack Tactics",
-        "text": "The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+        "name": "Táticas de grupo",
+        "text": "O abutre tem vantagem nas jogadas de ataque contra uma criatura se, pelo menos, um dos aliados do abutre estiver a 5ft da criaturas e não estiver incapacitado."
       }
     ],
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The vulture makes two attacks: one with its beak and one with its talons."
+        "name": "Ataques múltiplos",
+        "text": "O abutre realiza dois ataques: um com sua bicada e um com suas garras."
       },
       {
-        "name": "Beak",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage.",
-        "attack": "Beak|4|2d4+2"
+        "name": "Bicada",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 7 (2d4 + 2) de dano perfurante.",
+        "attack": "Bicada|4|2d4+2"
       },
       {
-        "name": "Talons",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.",
-        "attack": "Talons|4|2d6+2"
+        "name": "Garras",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 9 (2d6 + 2) dano cortante.",
+        "attack": "Garras|4|2d6+2"
       }
     ],
-    "environments": ["Desert", "Grassland"]
+    "environments": ["Deserto", "Prado"]
   },
   {
-    "name": "Giant Wasp",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c4/Giantvulture.jpg/revision/latest/scale-to-width-down/1200?cb=20200220162139",
-    "size": "Medium",
+    "name": "Vespa Gigante",
+    "img": "https://www.worldanvil.com/uploads/images/432370d23869ec3538fb7c294fa91307.jpg",
+    "size": "Médio",
     "hp": 13,
     "roll": "3d8",
     "ac": 12,
@@ -1801,17 +1803,17 @@ const beasts = [
     "cr": "1/2",
     "actions": [
       {
-        "name": "Sting",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
-        "attack": "Sting|4|1d6+2"
+        "name": "Ferrão",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., uma criatura. Acerto: 5 (1d6 + 2) dano perfurante, e o alvo deve realizar um teste de resistência de Constituição DC 11, sofrendo 10 (3d6) de dano de veneno se fracassar na resistência, ou metade desse dano se obtiver sucesso. Se o veneno reduzir os pontos de vida do alvo a 0, ele fica estável mas envenenado por 1 hora, mesmo após recuperar pontos de vida, e fica paralisado enquanto estiver envenenado dessa forma.",
+        "attack": "Ferrão|4|1d6+2"
       }
     ],
-    "environments": ["Forest", "Grassland", "Urban"]
+    "environments": ["Floresta", "Prado", "Urbano"]
   },
   {
-    "name": "Giant Weasel",
+    "name": "Arminho Gigante",
     "img": "https://i.pinimg.com/originals/29/30/81/293081e5d8170a8df4638d7da52d722b.jpg",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 9,
     "roll": "2d8",
     "ac": 13,
@@ -1822,29 +1824,29 @@ const beasts = [
     "int": 4,
     "wis": 12,
     "cha": 5,
-    "skills": "Perception +3, Stealth +5",
-    "senses": "Darkvision 60 ft.",
+    "skills": "Percepção +3, Furtividade +5",
+    "senses": "Visão no escuro 60 ft.",
     "passive": 13,
     "cr": "1/8",
     "traits": [
       {
-        "name": "Keen Hearing and Smell",
-        "text": "The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+        "name": "Audição e Faro aguçados",
+        "text": "O arminho tem vantagem em testes de Sabedoria (Percepção) relacionados à audição e ao olfato."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
-        "attack": "Bite|5|1d4+3"
+        "name": "Mordida",
+        "text": "Ataque Corpo-a-Corpo com Arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 5 (1d4 + 3) de dano perfurante.",
+        "attack": "Mordida|5|1d4+3"
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill"]
+    "environments": ["Floresta", "Prado", "Colina"]
   },
   {
-    "name": "Giant Wolf Spider",
+    "name": "Aranha-Lobo Gigante",
     "img": "https://i.pinimg.com/564x/e9/9d/70/e99d700416c01a2b020ec41b7b64bf66.jpg",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 11,
     "roll": "2d8 + 2",
     "ac": 13,
@@ -1856,37 +1858,37 @@ const beasts = [
     "int": 3,
     "wis": 12,
     "cha": 4,
-    "skills": "Perception +3, Stealth +7",
-    "senses": "Blindsight 10 ft., Darkvision 60 ft.",
+    "skills": "Percepção +3, Furtividade +7",
+    "senses": "Percepção às cegas 10 ft., Visão no escuro 60 ft.",
     "passive": 13,
     "cr": "1/4",
     "traits": [
       {
-        "name": "Spider Climb",
-        "text": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+        "name": "Escalada Aracnídea",
+        "text": "A aranha pode escalar superfícies difíceis, incluindo andar de cabeça para baixo em tetos, sem precisar realizar um teste de habilidade."
       },
       {
-        "name": "Web Sense",
-        "text": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+        "name": "Sentido na Teia",
+        "text": "Quando em contato com uma teia, a aranha sabe a localização exata de qualquer outra criatura em contato com a mesma teia"
       },
       {
-        "name": "Web Walker",
-        "text": "The spider ignores movement restrictions caused by webbing."
+        "name": "Andar na Teia",
+        "text": "A aranha ignora restrições de movimento causadas por estar numa teia."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
-        "attack": "Bite|3|1d6+1"
+        "name": "Mordida",
+        "text": "Ataque Corpo-a-Corpo com Arma: +3 para atingir, alcance 5 ft., uma criatura. Acerto: 4 (1d6 + 1) dano perfurante, e o alvo deve realizar um teste de resistência de Constituição DC 11, sofrendo 7 (2d6) de dano de veneno se falhar na resistência ou metade desse dano se obtiver sucesso. Se o dano de veneno reduzir o alvo a 0 pontos de vida, o alvo estará estável, porém, envenenado, por 1 hora e paralisado enquanto estiver envenenado dessa forma.",
+        "attack": "Mordida|3|1d6+1"
       }
     ],
-    "environments": ["Coastal", "Desert", "Forest", "Grassland", "Hill"]
+    "environments": ["Coastal", "Deserto", "Floresta", "Prado", "Colina"]
   },
   {
-    "name": "Goat",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/1/14/Mountain_goat5e.jpeg/revision/latest?cb=20200916011730",
-    "size": "Medium",
+    "name": "Bode",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/1/14/Mountain_goat5e.jpeg",
+    "size": "Médio",
     "hp": 4,
     "roll": "1d8",
     "ac": 10,
@@ -1901,28 +1903,28 @@ const beasts = [
     "cr": "0 ",
     "traits": [
       {
-        "name": "Charge",
-        "text": "If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 2 (1d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 10 Strength saving throw or be knocked prone.",
-        "attack": "Charge||1d4"
+        "name": "Investida",
+        "text": "Se o bode se mover, pelo menos, 20 ft.  em linha reta em direção de uma criatura logo antes de atingi-la com seu ataque de cabeçada, o alvo sofre 2 (1d4) de dano de concussão extra. Se o alvo for uma criatura, ele deve ser bem sucedido num teste de resistência de Força DC 10 para não cair no chão.",
+        "attack": "Investida||1d4"
       },
       {
-        "name": "Sure-Footed",
-        "text": "The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+        "name": "Estável",
+        "text": "O bode possui vantagem em testes de resistência de Força e Destreza feitos contra efeitos que poderiam derruba-lo no chão."
       }
     ],
     "actions": [
       {
-        "name": "Ram",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage.",
-        "attack": "Ram|3|1d4+1"
+        "name": "Cabeçada",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 3 (1d4 + 1) dano de concussão.",
+        "attack": "Cabeçada|3|1d4+1"
       }
     ],
-    "environments": ["Grassland", "Hill", "Mountain", "Urban"]
+    "environments": ["Prado", "Colina", "Montanha", "Urbano"]
   },
   {
-    "name": "Hawk",
+    "name": "Falcão",
     "img": "https://t3.ftcdn.net/jpg/05/70/08/30/360_F_570083074_ahODGPbZJ6KUWEuPpO07Vwsd7ByZFJ9R.jpg",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 1,
     "roll": "1d4-1",
     "ac": 13,
@@ -1934,28 +1936,28 @@ const beasts = [
     "int": 2,
     "wis": 14,
     "cha": 6,
-    "skills": "Perception +4",
+    "skills": "Percepção +4",
     "passive": 14,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Keen Sight",
-        "text": "The hawk has advantage on Wisdom (Perception) checks that rely on sight."
+        "name": "Visão aguçada",
+        "text": "O falcão tem vantagem em Sabedoria (Percepção) relacionados à visão."
       }
     ],
     "actions": [
       {
-        "name": "Talons",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
-        "attack": "Talons|5|1"
+        "name": "Garras",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 1 dano cortante.",
+        "attack": "Garras|5|1"
       }
     ],
     "environments": []
   },
   {
-    "name": "Hunter Shark",
+    "name": "Tubarão Caçador",
     "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/011ad8e1-175a-4002-ba85-26ff6c10c094/d94akwz-62a55f35-017b-4c07-96cc-d36b9218ec70.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAxMWFkOGUxLTE3NWEtNDAwMi1iYTg1LTI2ZmY2YzEwYzA5NFwvZDk0YWt3ei02MmE1NWYzNS0wMTdiLTRjMDctOTZjYy1kMzZiOTIxOGVjNzAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.k1F6rw6F-LUZzT8oI_vcLubbmUDYO7_vLq1ymAnSvhc",
-    "size": "Large",
+    "size": "Grande",
     "hp": 45,
     "roll": "6d10 + 12",
     "ac": 12,
@@ -1966,33 +1968,33 @@ const beasts = [
     "int": 1,
     "wis": 10,
     "cha": 4,
-    "skills": "Perception +2",
-    "senses": "Darkvision 30 ft.",
+    "skills": "Percepção +2",
+    "senses": "Visão no escuro 30 ft.",
     "passive": 12,
     "cr": "2 ",
     "traits": [
       {
-        "name": "Blood Frenzy",
-        "text": "The shark has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+        "name": "Frenesi de Sangue",
+        "text": "O tubarão tem vantagem nas jogadas de ataque corpo-a-corpo contra qualquer criatura que não esteja com todos os seus pontos de vida."
       },
       {
-        "name": "Water Breathing",
-        "text": "The shark can breathe only underwater."
+        "name": "Respirar na Água",
+        "text": "O tubarão pode respirar apenas em baixo d’água."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.",
-        "attack": "Bite|6|2d8+4"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 5 ft., um alvo. Acerto: 13 (2d8 + 4) de dano perfurante.",
+        "attack": "Mordida|6|2d8+4"
       }
     ],
     "environments": ["Underwater"]
   },
   {
-    "name": "Hyena",
+    "name": "Hiena",
     "img": "https://i.pinimg.com/736x/5e/f8/28/5ef828f0e2954f26df3e7db6011f3ef3.jpg",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 5,
     "roll": "1d8 + 1",
     "ac": 11,
@@ -2003,28 +2005,28 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 5,
-    "skills": "Perception +3",
+    "skills": "Percepção +3",
     "passive": 13,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Pack Tactics",
-        "text": "The hyena has advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+        "name": "Táticas de grupo",
+        "text": "A hiena tem vantagem nas jogadas de ataque contra uma criatura se, pelo menos, um dos aliados da hiena estiver a 5ft da criaturas e não estiver incapacitado."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing damage.",
-        "attack": "Bite|2|1d6"
+        "name": "Mordida",
+        "text": "Ataque Corpo-a-Corpo com Arma: +2 para atingir, alcance 5 ft., um alvo. Acerto: 3 (1d6) de dano perfurante.",
+        "attack": "Mordida|2|1d6"
       }
     ],
-    "environments": ["Desert", "Forest", "Grassland", "Hill"]
+    "environments": ["Deserto", "Floresta", "Prado", "Colina"]
   },
   {
-    "name": "Jackal",
+    "name": "Chacal",
     "img": "https://angrygolem-games.com/wp-content/uploads/2021/11/Jackal.jpg",
-    "size": "Small",
+    "size": "Pequeno",
     "hp": 3,
     "roll": "1d6",
     "ac": 12,
@@ -2035,32 +2037,32 @@ const beasts = [
     "int": 3,
     "wis": 12,
     "cha": 6,
-    "skills": "Perception +3",
+    "skills": "Percepção +3",
     "passive": 13,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Keen Hearing and Smell",
-        "text": "The jackal has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+        "name": "Audição e Faro aguçados",
+        "text": "O chacal tem vantagem em testes de Sabedoria (Percepção) relacionados à audição e ao olfato."
       },
       {
-        "name": "Pack Tactics",
-        "text": "The jackal has advantage on an attack roll against a creature if at least one of the jackal's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+        "name": "Táticas de grupo",
+        "text": "O chacal tem vantagem nas jogadas de ataque contra uma criatura se, pelo menos, um dos aliados do chacal estiver a 5ft da criaturas e não estiver incapacitado."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) piercing damage.",
-        "attack": "Bite|1|1d4-1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +1 para atingir, alcance 5 ft., um alvo. Acerto: 1 (1d4 - 1) de dano perfurante.",
+        "attack": "Mordida|1|1d4-1"
       }
     ],
-    "environments": ["Desert", "Grassland"]
+    "environments": ["Deserto", "Prado"]
   },
   {
-    "name": "Killer Whale",
+    "name": "Baleia Assassina",
     "img": "https://angrygolem-games.com/wp-content/uploads/2021/04/killer-whale.jpg",
-    "size": "Huge",
+    "size": "Enorme",
     "hp": 90,
     "roll": "12d12 + 12",
     "ac": 12,
@@ -2071,36 +2073,36 @@ const beasts = [
     "int": 3,
     "wis": 12,
     "cha": 7,
-    "skills": "Perception +3",
-    "senses": "Blindsight 120 ft.",
+    "skills": "Percepção +3",
+    "senses": "Percepção às cegas 120 ft.",
     "passive": 13,
     "cr": "3 ",
     "traits": [
       {
-        "name": "Echolocation",
-        "text": "The whale can't use its blindsight while deafened."
+        "name": "Eco Localização",
+        "text": "Enquanto não puder ouvir, a baleia perderá a percepção às cegas."
       },
       {
-        "name": "Hold Breath",
-        "text": "The whale can hold its breath for 30 minutes"
+        "name": "Prender a Respiração",
+        "text": "A baleia consegue prender sua respiração por 30 minutos."
       },
       {
-        "name": "Keen Hearing",
-        "text": "The whale has advantage on Wisdom (Perception) checks that rely on hearing."
+        "name": "Audição aguçada",
+        "text": "A baleia tem vantagem em testes de Sabedoria (Percepção) relacionados à audição"
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) piercing damage."
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 5 ft., um alvo. Acerto: 21 (5d6 + 4) de dano perfurante."
       }
     ],
     "environments": ["Underwater"]
   },
   {
-    "name": "Lion",
+    "name": "Leão",
     "img": "https://5e.tools/img/bestiary/BGG/Spotted%20Lion.webp",
-    "size": "Large",
+    "size": "Grande",
     "hp": 26,
     "roll": "4d10 + 4",
     "ac": 12,
@@ -2111,45 +2113,45 @@ const beasts = [
     "int": 3,
     "wis": 12,
     "cha": 8,
-    "skills": "Perception +3, Stealth +6",
+    "skills": "Percepção +3, Furtividade +6",
     "passive": 13,
     "cr": "1 ",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The lion has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "O leão tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       },
       {
-        "name": "Pack Tactics",
-        "text": "The lion has advantage on an attack roll against a creature if at least one of the lion's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+        "name": "Táticas de grupo",
+        "text": "O leão tem vantagem nas jogadas de ataque contra uma criatura se, pelo menos, um dos aliados do leão estiver a 5ft da criaturas e não estiver incapacitado."
       },
       {
-        "name": "Pounce",
-        "text": "If the lion moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the lion can make one bite attack against it as a bonus action."
+        "name": "Bote",
+        "text": "Se o leão se mover, pelo menos, 20 ft. em linha reta em direção de um alvo logo antes de atingi-lo com seu ataque de garra, o alvo deve ser bem sucedido num teste de resistência de Força DC 13 para não cair no chão. Se o alvo cair no chão, o leão poderá realizar uma ação bônus para realizar um ataque de mordida contra ele."
       },
       {
-        "name": "Running Leap",
-        "text": "With a 10-foot running start, the lion can long jump up to 25 ft.."
+        "name": "Salto em Corrida",
+        "text": "Como parte do seu movimento e depois de uma corrida inicial de 3 metros, o leão pode realizar um salto em distância de até 7,5 metros."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
-        "attack": "Bite|5|1d8+3"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 7 (1d8 + 3) de dano perfurante.",
+        "attack": "Mordida|5|1d8+3"
       },
       {
-        "name": "Claw",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
-        "attack": "Claw|5|1d6+3"
+        "name": "Garra",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 6 (1d6 + 3) dano cortante.",
+        "attack": "Garra|5|1d6+3"
       }
     ],
-    "environments": ["Desert", "Grassland", "Hill", "Mountain"]
+    "environments": ["Deserto", "Prado", "Colina", "Montanha"]
   },
   {
-    "name": "Lizard",
+    "name": "Lagarto",
     "img": "https://i.pinimg.com/originals/a3/e8/12/a3e812f75810022f6bb9ac42c73e97b7.png",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 2,
     "roll": "1d4",
     "ac": 10,
@@ -2161,22 +2163,22 @@ const beasts = [
     "int": 1,
     "wis": 8,
     "cha": 3,
-    "senses": "Darkvision 30 ft.",
+    "senses": "Visão no escuro 30 ft.",
     "passive": 9,
     "cr": "0 ",
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
-        "attack": "Bite||1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +0 para atingir, alcance 5 ft., um alvo. Acerto: 1 de dano perfurante.",
+        "attack": "Mordida||1"
       }
     ],
     "environments": []
   },
   {
-    "name": "Mammoth",
+    "name": "Mamute",
     "img": "https://www.pngitem.com/pimgs/m/236-2361840_d-d-5e-mammoth-png-download-mammoth-art.png",
-    "size": "Huge",
+    "size": "Enorme",
     "hp": 126,
     "roll": "11d12 + 55",
     "ac": 13,
@@ -2191,28 +2193,28 @@ const beasts = [
     "cr": "6 ",
     "traits": [
       {
-        "name": "Trampling Charge",
-        "text": "If the mammoth moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone. If the target is prone, the mammoth can make one stomp attack against it as a bonus action."
+        "name": "Investida Esmagadora",
+        "text": "Se o mamute se mover, pelo menos 20 ft. em linha reta em direção de uma criatura logo antes de atingi-la com seu ataque de presa, o alvo deve ser bem sucedido num teste de resistência de Força DC 18 para não cair no chão. Se o alvo cair no chão, o elefante pode realizar um ataque de pisotear contra ele com uma ação bônus."
       }
     ],
     "actions": [
       {
-        "name": "Gore",
-        "text": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 25 (4d8 + 7) piercing damage.",
-        "attack": "Gore|10|4d8+7"
+        "name": "Presas",
+        "text": "Ataque corpo-a-corpo com arma: +10 para atingir, alcance 10 ft., um alvo. Acerto: 25 (4d8 + 7) de dano perfurante.",
+        "attack": "Presas|10|4d8+7"
       },
       {
-        "name": "Stomp",
-        "text": "Melee Weapon Attack: +10 to hit, reach 5 ft., one prone creature. Hit: 29 (4d10 + 7) bludgeoning damage.",
-        "attack": "Stomp|10|4d10+7"
+        "name": "Pisotear",
+        "text": "Ataque corpo-a-corpo com arma: +10 para atingir, alcance 5 ft., one prone creature. Acerto: 29 (4d10 + 7) dano de concussão.",
+        "attack": "Pisotear|10|4d10+7"
       }
     ],
     "environments": ["Arctic"]
   },
   {
-    "name": "Mastiff",
+    "name": "Mastim",
     "img": "https://www.dndbeyond.com/avatars/thumbnails/30849/339/1000/1000/638064501182707662.png",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 5,
     "roll": "1d8 + 1",
     "ac": 12,
@@ -2223,28 +2225,28 @@ const beasts = [
     "int": 3,
     "wis": 12,
     "cha": 7,
-    "skills": "Perception +3",
+    "skills": "Percepção +3",
     "passive": 13,
     "cr": "1/8",
     "traits": [
       {
-        "name": "Keen Hearing and Smell",
-        "text": "The mastiff has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+        "name": "Audição e Faro aguçados",
+        "text": "O mastim tem vantagem em testes de Sabedoria (Percepção) relacionados à audição e ao olfato."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
-        "attack": "Bite|3|1d6+1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 4 (1d6 + 1) de dano perfurante.  Se o alvo for uma criatura, ela deve ser bem sucedida num teste de resistência de DC 11  ou será derrubada no chão.",
+        "attack": "Mordida|3|1d6+1"
       }
     ],
-    "environments": ["Forest", "Hill", "Urban"]
+    "environments": ["Floresta", "Colina", "Urbano"]
   },
   {
-    "name": "Mule",
+    "name": "Mula",
     "img": "https://img.freepik.com/premium-photo/donkey-2d-vector-illustration-cartoon-white-background_889056-22679.jpg",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 11,
     "roll": "2d8 + 2",
     "ac": 10,
@@ -2259,27 +2261,27 @@ const beasts = [
     "cr": "1/8",
     "traits": [
       {
-        "name": "Beast of Burden",
-        "text": "The mule is considered to be a Large animal for the purpose of determining its carrying capacity."
+        "name": "Besta de Carga",
+        "text": "A mula é considerada como um animal Grande com os propósitos de determinar sua capacidade de carga."
       },
       {
-        "name": "Sure-Footed",
-        "text": "The mule has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+        "name": "Estável",
+        "text": "A mula possui vantagem em testes de resistência de Força e Destreza feitos contra efeitos que poderiam derruba-la no chão."
       }
     ],
     "actions": [
       {
-        "name": "Hooves",
-        "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
-        "attack": "Hooves|4|1d4+2"
+        "name": "Cascos",
+        "text": "Ataque corpo-a-corpo com arma: +2 para atingir, alcance 5 ft., um alvo. Acerto: 4 (1d4 + 2) dano de concussão.",
+        "attack": "Cascos|4|1d4+2"
       }
     ],
-    "environments": ["Desert", "Hill", "Urban"]
+    "environments": ["Deserto", "Colina", "Urbano"]
   },
   {
-    "name": "Octopus",
+    "name": "Polvo",
     "img": "https://i.pinimg.com/736x/fb/a9/31/fba931410663726e49fecbdc0843ea2f.jpg",
-    "size": "Small",
+    "size": "Pequeno",
     "hp": 3,
     "roll": "1d6",
     "ac": 12,
@@ -2291,41 +2293,41 @@ const beasts = [
     "int": 3,
     "wis": 10,
     "cha": 4,
-    "skills": "Perception +2, Stealth +4",
-    "senses": "Darkvision 30 ft.",
+    "skills": "Percepção +2, Furtividade +4",
+    "senses": "Visão no escuro 30 ft.",
     "passive": 12,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Hold Breath",
-        "text": "While out of water, the octopus can hold its breath for 30 minutes."
+        "name": "Prender a Respiração",
+        "text": "nquanto estiver fora da água, o polvo pode prender a respiração por 30 minutos."
       },
       {
-        "name": "Underwater Camouflage",
-        "text": "The octopus has advantage on Dexterity (Stealth) checks made while underwater."
+        "name": "Camuflagem Submersa",
+        "text": "O polvo tem vantagem em testes de Destreza (Furtividade) feitos enquanto estiver submerso."
       },
       {
-        "name": "Water Breathing",
-        "text": "The octopus can breathe only underwater."
+        "name": "Respirar na Água",
+        "text": "O polvo pode respirar apenas em baixo d’água."
       }
     ],
     "actions": [
       {
-        "name": "Tentacles",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage, and the target is grappled (escape DC 10). Until this grapple ends, the octopus can't use its tentacles on another target.",
-        "attack": "Tentacles|4|1"
+        "name": "Tentáculos",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 1 dano de concussão,e o alvo fica agarrado (DC 10 para escapar). Até o agarrão acabar, o polvo não pode usar seus tentáculos em outro alvo.",
+        "attack": "Tentáculos|4|1"
       },
       {
-        "name": "Ink Cloud (Recharges after a Short or Long Rest)",
-        "text": "A 5-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action."
+        "name": "Nuvem de Tinta (Recarrega após um Descanso Curto ou Longo)",
+        "text": "Uma nuvem de tinta de 5ft de raio se espalha em volta do polvo, se ele estiver submerso. A área fica com escuridão densa por 1 minuto, no entanto, uma corrente forte pode dispersar a tinta. Após liberar a tinta, o polvo pode usar a ação de Disparada com uma ação bônus."
       }
     ],
     "environments": ["Underwater"]
   },
   {
-    "name": "Owl",
+    "name": "Coruja",
     "img": "https://www.dndbeyond.com/avatars/thumbnails/16/533/1000/1000/636376331660233857.jpeg",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 1,
     "roll": "1d4-1",
     "ac": 11,
@@ -2337,33 +2339,33 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 7,
-    "skills": "Perception +3, Stealth +3",
-    "senses": "Darkvision 120 ft.",
+    "skills": "Percepção +3, Furtividade +3",
+    "senses": "Visão no escuro 120 ft.",
     "passive": 13,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Flyby",
-        "text": "The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+        "name": "Sobrevoo",
+        "text": "A coruja não provoca ataques de oportunidade quando voa para fora do alcance de um inimigo."
       },
       {
-        "name": "Keen Hearing and Sight",
-        "text": "The owl has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+        "name": "Audição e visão aguçados",
+        "text": "A coruja tem vantagem em testes de Sabedoria (Percepção) relacionados à visão e à audição."
       }
     ],
     "actions": [
       {
-        "name": "Talons",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
-        "attack": "Talons|3|1"
+        "name": "Garras",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 1 dano cortante.",
+        "attack": "Garras|3|1"
       }
     ],
-    "environments": ["Arctic", "Forest"]
+    "environments": ["Arctic", "Floresta"]
   },
   {
-    "name": "Panther",
+    "name": "Pantera",
     "img": "https://i.imgur.com/cEHre6m.png",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 13,
     "roll": "3d8",
     "ac": 12,
@@ -2375,37 +2377,37 @@ const beasts = [
     "int": 3,
     "wis": 14,
     "cha": 7,
-    "skills": "Perception +4, Stealth +6",
+    "skills": "Percepção +4, Furtividade +6",
     "passive": 14,
     "cr": "1/4",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The panther has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "A pantera tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       },
       {
-        "name": "Pounce",
-        "text": "If the panther moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action."
+        "name": "Bote",
+        "text": "Se a pantera se mover, pelo menos, 20ft em linha reta em direção de um alvo logo antes de atingi-lo com seu ataque de garra, o alvo deve ser bem sucedido num teste de resistência de Força DC 12 para não cair no chão. Se o alvo cair no chão, a pantera poderá realizar uma ação bônus para realizar um ataque de mordida contra ele."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
-        "attack": "Bite|4|1d6+2"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 5 (1d6 + 2) de dano perfurante.",
+        "attack": "Mordida|4|1d6+2"
       },
       {
-        "name": "Claw",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.",
-        "attack": "Claw|4|1d4+2"
+        "name": "Garra",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 4 (1d4 + 2) dano cortante.",
+        "attack": "Garra|4|1d4+2"
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill"]
+    "environments": ["Floresta", "Prado", "Colina"]
   },
   {
-    "name": "Plesiosaurus",
+    "name": "Plesiossauro",
     "img": "https://st3.depositphotos.com/1409882/35928/v/450/depositphotos_359281714-stock-illustration-illustration-plesiosaurs-extinct-mesozoic-marine.jpg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 68,
     "roll": "8d10 + 24",
     "ac": 13,
@@ -2417,28 +2419,28 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 5,
-    "skills": "Perception +3, Stealth +4",
+    "skills": "Percepção +3, Furtividade +4",
     "passive": 13,
     "cr": "2 ",
     "traits": [
       {
-        "name": "Hold Breath",
-        "text": "The plesiosaurus can hold its breath for 1 hour."
+        "name": "Prender a Respiração",
+        "text": "O plesiossauro pode prender a respiração por 1 hora."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) piercing damage.",
-        "attack": "Bite|6|3d6+4"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 10 ft., um alvo. Acerto: 14 (3d6 + 4) de dano perfurante.",
+        "attack": "Mordida|6|3d6+4"
       }
     ],
     "environments": ["Coastal", "Underwater"]
   },
   {
-    "name": "Poisonous Snake",
+    "name": "Serpente Venenosa",
     "img": "https://www.worldanvil.com/uploads/images/d04201b3de85f66cae829b80b26a1144.jpg",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 2,
     "roll": "1d4",
     "ac": 13,
@@ -2450,22 +2452,22 @@ const beasts = [
     "int": 1,
     "wis": 10,
     "cha": 3,
-    "senses": "Blindsight 10 ft.",
+    "senses": "Percepção às cegas 10 ft.",
     "passive": 10,
     "cr": "1/8",
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.",
-        "attack": "Bite|5|1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 1 dano perfurante, e o alvo deve realizar um teste de resistência de Constituição DC 10, sofrendo 5 (2d4) de dano de veneno se falhar na resistência ou metade desse dano se obtiver sucesso.",
+        "attack": "Mordida|5|1"
       }
     ],
-    "environments": ["Coastal", "Desert", "Forest", "Grassland", "Hill", "Swamp"]
+    "environments": ["Coastal", "Deserto", "Floresta", "Prado", "Colina", "Pântano"]
   },
   {
-    "name": "Polar Bear",
+    "name": "Urso Polar",
     "img": "https://i.pinimg.com/736x/7e/8d/49/7e8d497c45deb55025d301e01ffdcd3f.jpg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 42,
     "roll": "5d10 + 15",
     "ac": 12,
@@ -2477,37 +2479,37 @@ const beasts = [
     "int": 2,
     "wis": 13,
     "cha": 7,
-    "skills": "Perception +3",
+    "skills": "Percepção +3",
     "passive": 13,
     "cr": "2 ",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "O urso tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       }
     ],
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The bear makes two attacks: one with its bite and one with its claws."
+        "name": "Ataques múltiplos",
+        "text": "O urso realiza dois ataques: um com sua mordida e um com suas garras"
       },
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage.",
-        "attack": "Bite|7|1d8+5"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +7 para atingir, alcance 5 ft., um alvo. Acerto: 9 (1d8 + 5) de dano perfurante.",
+        "attack": "Mordida|7|1d8+5"
       },
       {
-        "name": "Claws",
-        "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
-        "attack": "Claws|7|2d6+5"
+        "name": "Garras",
+        "text": "Ataque corpo-a-corpo com arma: +7 para atingir, alcance 5 ft., um alvo. Acerto: 12 (2d6 + 5) dano cortante.",
+        "attack": "Garras|7|2d6+5"
       }
     ],
     "environments": ["Arctic", "Underdark"]
   },
   {
-    "name": "Pony",
+    "name": "Pónei",
     "img": "https://www.krydodan.com/mounts/vor2.png",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 11,
     "roll": "2d8 + 2",
     "ac": 10,
@@ -2522,17 +2524,17 @@ const beasts = [
     "cr": "1/8",
     "actions": [
       {
-        "name": "Hooves",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage.",
-        "attack": "Hooves|4|2d4+2"
+        "name": "Cascos",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 7 (2d4 + 2) dano de concussão.",
+        "attack": "Cascos|4|2d4+2"
       }
     ],
-    "environments": ["Urban"]
+    "environments": ["Urbano"]
   },
   {
-    "name": "Pteranodon",
+    "name": "Pteranodonte",
     "img": "https://2e.aonprd.com/Images/Monsters/Pterosaur_Pteranodon.png",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 13,
     "roll": "3d8",
     "ac": 13,
@@ -2544,27 +2546,27 @@ const beasts = [
     "int": 2,
     "wis": 9,
     "cha": 5,
-    "skills": "Perception +1",
+    "skills": "Percepção +1",
     "passive": 11,
     "cr": "1/4",
     "traits": [
       {
-        "name": "Flyby",
-        "text": "The pteranodon doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+        "name": "Sobrevoo",
+        "text": "O ptranodonte não provoca ataques de oportunidade quando voa para fora do alcance de um inimigo."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) piercing damage"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +3 para atingir, alcance 5 ft., um alvo. Acerto: 6 (2d4 + 1) dano perfurante"
       }
     ],
-    "environments": ["Coastal", "Grassland", "Mountain"]
+    "environments": ["Coastal", "Prado", "Montanha"]
   },
   {
-    "name": "Quipper",
+    "name": "Piranha",
     "img": "https://www.dndbeyond.com/avatars/thumbnails/30849/309/1000/1000/638064499305106998.png",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 1,
     "roll": "1d4-1",
     "ac": 13,
@@ -2575,32 +2577,32 @@ const beasts = [
     "int": 1,
     "wis": 7,
     "cha": 2,
-    "senses": "Darkvision 60 ft.",
+    "senses": "Visão no escuro 60 ft.",
     "passive": 8,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Blood Frenzy",
-        "text": "The quipper has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+        "name": "Frenesi de Sangue",
+        "text": "A piranha tem vantagem nas jogadas de ataque corpo-a-corpo contra qualquer criatura que não esteja com todos os seus pontos de vida."
       },
       {
-        "name": "Water Breathing",
-        "text": "The quipper can breathe only underwater."
+        "name": "Respirar na Água",
+        "text": "A piranha pode respirar apenas em baixo d’água."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
-        "attack": "Bite|5|1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 1 de dano perfurante.",
+        "attack": "Mordida|5|1"
       }
     ],
     "environments": ["Underwater"]
   },
   {
-    "name": "Rat",
+    "name": "Rato",
     "img": "https://www.dandwiki.com/w/images/8/8b/Rat.png",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 1,
     "roll": "1d4-1",
     "ac": 10,
@@ -2611,28 +2613,28 @@ const beasts = [
     "int": 2,
     "wis": 10,
     "cha": 4,
-    "senses": "Darkvision 30 ft.",
+    "senses": "Visão no escuro 30 ft.",
     "passive": 10,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The rat has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "O rato tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
-        "attack": "Bite||1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +0 para atingir, alcance 5 ft., um alvo. Acerto: 1 de dano perfurante.",
+        "attack": "Mordida||1"
       }
     ],
-    "environments": ["Swamp", "Urban"]
+    "environments": ["Pântano", "Urbano"]
   },
   {
-    "name": "Raven",
+    "name": "Corvo",
     "img": "https://www.dndbeyond.com/avatars/thumbnails/16/553/1000/1000/636376341568391037.jpeg",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 1,
     "roll": "1d4-1",
     "ac": 12,
@@ -2644,27 +2646,27 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 6,
-    "skills": "Perception +3",
+    "skills": "Percepção +3",
     "passive": 13,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Mimicry",
-        "text": "The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check."
+        "name": "Mímica",
+        "text": "O corvo é capaz de imitar sons simples que ele ouve,como pessoas cochichando, um bebê chorando ou um animal rangendo. Uma criatura que ouvir os sons pode perceber que são imitações se for bem sucedida num teste de Sabedoria (Intuição) DC 10."
       }
     ],
     "actions": [
       {
-        "name": "Beak",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
+        "name": "Bicada",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 1 de dano perfurante."
       }
     ],
-    "environments": ["Hill", "Swamp", "Urban"]
+    "environments": ["Colina", "Pântano", "Urbano"]
   },
   {
-    "name": "Reef Shark",
+    "name": "Tubarão dos Arrecifes",
     "img": "https://i.postimg.cc/MK9LhHsv/Silvertip-Shark2.png",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 22,
     "roll": "4d8 + 4",
     "ac": 12,
@@ -2675,33 +2677,33 @@ const beasts = [
     "int": 1,
     "wis": 10,
     "cha": 4,
-    "skills": "Perception +2",
-    "senses": "Blindsight 30 ft.",
+    "skills": "Percepção +2",
+    "senses": "Percepção às cegas 30 ft.",
     "passive": 12,
     "cr": "1/2",
     "traits": [
       {
-        "name": "Pack Tactics",
-        "text": "The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+        "name": "Táticas de grupo",
+        "text": "O tubarão tem vantagem nas jogadas de ataque contra uma criatura se, pelo menos, um dos aliados do tubarão estiver a 5ft da criaturas e não estiver incapacitado."
       },
       {
-        "name": "Water Breathing",
-        "text": "The shark can breathe only underwater."
+        "name": "Respirar na Água",
+        "text": "O tubarão pode respirar apenas em baixo d’água."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
-        "attack": "Bite|4|1d8+2"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 6 (1d8 + 2) de dano perfurante.",
+        "attack": "Mordida|4|1d8+2"
       }
     ],
     "environments": ["Underwater"]
   },
   {
-    "name": "Rhinoceros",
-    "img": "https://static.wikia.nocookie.net/here-be-dragons/images/5/59/Woolly_Rhinoceros.jpg/revision/latest?cb=20200707013539",
-    "size": "Large",
+    "name": "Rinoceronte",
+    "img": "https://static.wikia.nocookie.net/here-be-dragons/images/5/59/Woolly_Rhinoceros.jpg",
+    "size": "Grande",
     "hp": 45,
     "roll": "6d10 + 12",
     "ac": 11,
@@ -2716,24 +2718,24 @@ const beasts = [
     "cr": "2 ",
     "traits": [
       {
-        "name": "Charge",
-        "text": "If the rhinoceros moves at least 20 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.",
-        "attack": "Charge||2d8"
+        "name": "Investida",
+        "text": "Se o rinoceronte se mover, pelo menos, 20 ft.  em linha reta em direção de uma criatura logo antes de atingi-la com seu ataque de chifre, o alvo sofre 9 (2d8) de dano de concussão extra. Se o alvo for uma criatura, ele deve ser bem sucedido num teste de resistência de Força DC 15 para não cair no chão.",
+        "attack": "Investida||2d8"
       }
     ],
     "actions": [
       {
-        "name": "Gore",
-        "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.",
-        "attack": "Gore|7|2d8+5"
+        "name": "Presas",
+        "text": "Ataque corpo-a-corpo com arma: +7 para atingir, alcance 5 ft., um alvo. Acerto: 14 (2d8 + 5) dano de concussão.",
+        "attack": "Presas|7|2d8+5"
       }
     ],
-    "environments": ["Grassland"]
+    "environments": ["Prado"]
   },
   {
-    "name": "Riding Horse",
+    "name": "Cavalo de Montaria",
     "img": "https://www.dndbeyond.com/avatars/thumbnails/9/904/1000/1000/636334288913250513.jpeg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 13,
     "roll": "2d10 + 2",
     "ac": 10,
@@ -2748,17 +2750,17 @@ const beasts = [
     "cr": "1/4",
     "actions": [
       {
-        "name": "Hooves",
-        "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.",
-        "attack": "Hooves|2|2d4+3"
+        "name": "Cascos",
+        "text": "Ataque corpo-a-corpo com arma: +2 para atingir, alcance 5 ft., um alvo. Acerto: 8 (2d4 + 3) dano de concussão.",
+        "attack": "Cascos|2|2d4+3"
       }
     ],
-    "environments": ["Grassland", "Urban"]
+    "environments": ["Prado", "Urbano"]
   },
   {
-    "name": "Saber-Toothed Tiger",
+    "name": "Tigre Dentes-de-Sabre",
     "img": "https://t3.ftcdn.net/jpg/06/67/58/74/360_F_667587417_qZnUqYdBkGn75j4MtO4g1xcDWW5wW7JY.jpg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 52,
     "roll": "7d10 + 14",
     "ac": 12,
@@ -2769,37 +2771,37 @@ const beasts = [
     "int": 3,
     "wis": 12,
     "cha": 8,
-    "skills": "Perception +3, Stealth +6",
+    "skills": "Percepção +3, Furtividade +6",
     "passive": 13,
     "cr": "2 ",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The tiger has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "O tigre tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       },
       {
-        "name": "Pounce",
-        "text": "If the tiger moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action."
+        "name": "Bote",
+        "text": "Se o tigre se mover, pelo menos 20 ft.  em linha reta em direção de um alvo logo antes de atingi-lo com seu ataque de  garra, o alvo deve ser bem sucedido num teste de resistência de Força DC 14 para não cair no chão. Se o alvo cair no chão, o tigre poderá realizar uma ação bônus para realizar um ataque de mordida contra ele."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) piercing damage.",
-        "attack": "Bite|6|1d10+5"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 5 ft., um alvo. Acerto: 10 (1d10 + 5) de dano perfurante.",
+        "attack": "Mordida|6|1d10+5"
       },
       {
-        "name": "Claw",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
-        "attack": "Claw|6|2d6+5"
+        "name": "Garra",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 5 ft., um alvo. Acerto: 12 (2d6 + 5) dano cortante.",
+        "attack": "Garra|6|2d6+5"
       }
     ],
-    "environments": ["Arctic", "Mountain"]
+    "environments": ["Arctic", "Montanha"]
   },
   {
-    "name": "Scorpion",
-    "img": "https://static.wikia.nocookie.net/teso_gamepedia/images/7/76/Concept_art_Giant_scorpion.png/revision/latest/scale-to-width-down/367?cb=20140325130932",
-    "size": "Tiny",
+    "name": "Escorpião",
+    "img": "https://static.wikia.nocookie.net/teso_gamepedia/images/7/76/Concept_art_Giant_scorpion.png",
+    "size": "Miúda",
     "hp": 1,
     "roll": "1d4-1",
     "ac": 11,
@@ -2810,22 +2812,22 @@ const beasts = [
     "int": 1,
     "wis": 8,
     "cha": 2,
-    "senses": "Blindsight 10 ft.",
+    "senses": "Percepção às cegas 10 ft.",
     "passive": 9,
     "cr": "0 ",
     "actions": [
       {
-        "name": "Sting",
-        "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must make a DC 9 Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one.",
-        "attack": "Sting|2|1"
+        "name": "Ferrão",
+        "text": "Ataque corpo-a-corpo com arma: +2 para atingir, alcance 5 ft., uma criatura. Acerto: 1 dano perfurante, e o alvo deve realizar um teste de resistência de Constituição DC 9, sofrendo 4 (1d8) de dano de veneno se fracassar na resistência, ou metade desse dano se obtiver sucesso.",
+        "attack": "Ferrão|2|1"
       }
     ],
-    "environments": ["Desert"]
+    "environments": ["Deserto"]
   },
   {
-    "name": "Sea Horse",
-    "img": "https://static.wikia.nocookie.net/wowpedia/images/6/6e/Seahorse.png/revision/latest?cb=20100806205450",
-    "size": "Tiny",
+    "name": "Cavalo Marinho",
+    "img": "https://static.wikia.nocookie.net/wowpedia/images/6/6e/Seahorse.png",
+    "size": "Miúda",
     "hp": 1,
     "roll": "1d4-1",
     "ac": 11,
@@ -2840,16 +2842,16 @@ const beasts = [
     "cr": "0 ",
     "traits": [
       {
-        "name": "Water Breathing",
-        "text": "The sea horse can breathe only underwater."
+        "name": "Respirar na Água",
+        "text": "O cavalo marinho pode respirar apenas em baixo d’água."
       }
     ],
     "environments": []
   },
   {
-    "name": "Spider",
+    "name": "Aranha",
     "img": "https://www.worldanvil.com/uploads/images/33efd1a6f45814e4541ca4cfdab0ed24.png",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 1,
     "roll": "1d4-1",
     "ac": 12,
@@ -2861,37 +2863,37 @@ const beasts = [
     "int": 1,
     "wis": 10,
     "cha": 2,
-    "skills": "Stealth +4",
-    "senses": "Darkvision 30 ft.",
+    "skills": "Furtividade +4",
+    "senses": "Visão no escuro 30 ft.",
     "passive": 12,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Spider Climb",
-        "text": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+        "name": "Escalada Aracnídea",
+        "text": "A aranha pode escalar superfícies difíceis, incluindo andar de cabeça para baixo em tetos, sem precisar realizar um teste de habilidade."
       },
       {
-        "name": "Web Sense",
-        "text": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+        "name": "Sentido na Teia",
+        "text": "Quando em contato com uma teia, a aranha sabe a localização exata de qualquer outra criatura em contato com a mesma teia"
       },
       {
-        "name": "Web Walker",
-        "text": "The spider ignores movement restrictions caused by webbing."
+        "name": "Andar na Teia",
+        "text": "A aranha  ignora restrições de movimento causadas por estar numa teia."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing damage, and the target must succeed on a DC 9 Constitution saving throw or take 2 (1d4) poison damage.",
-        "attack": "Bite|4|1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., uma criatura. Acerto: 1 dano perfurante,e o alvo deve ser bem sucedido num teste de resistência de Constituição DC 9 ou sofrerá 2 (1d4) de dano de veneno.",
+        "attack": "Mordida|4|1"
       }
     ],
     "environments": []
   },
   {
     "name": "Stirge",
-    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/8/86/Stirge-5e.png/revision/latest?cb=20171011140457",
-    "size": "Tiny",
+    "img": "https://static.wikia.nocookie.net/forgottenrealms/images/8/86/Stirge-5e.png",
+    "size": "Miúda",
     "hp": 2,
     "roll": "1d4",
     "ac": 14,
@@ -2903,32 +2905,32 @@ const beasts = [
     "int": 2,
     "wis": 8,
     "cha": 6,
-    "senses": "Darkvision 60 ft.",
+    "senses": "Visão no escuro 60 ft.",
     "passive": 9,
     "cr": "1/8",
     "actions": [
       {
-        "name": "Blood Drain",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.\nThe stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.",
-        "attack": "Blood Drain|5|1d4+3"
+        "name": "Drenar Sangue",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., uma criatura. Acerto: 5 (1d4 + 3) dano perfurante, e o stirge se prende ao alvo. Enquanto estiver preso, o stirge não pode atacar. Ao invés disso, no início de cada um dos turnos do stirge, o alvo perde 5 (1d4 + 3) pontos de vida devido à perda de sangue. O stirge pode se desprender gastando 1,5 metro de seu movimento. Ele fará isso após drenar 10 pontos de vida de sangue do alvo ou o alvo morrer. Uma criatura, incluindo o alvo, pode usar uma ação para desprender o stirge.",
+        "attack": "Drenar Sangue|5|1d4+3"
       }
     ],
     "environments": [
       "Coastal",
-      "Desert",
-      "Forest",
-      "Grassland",
-      "Hill",
-      "Mountain",
-      "Swamp",
+      "Deserto",
+      "Floresta",
+      "Prado",
+      "Colina",
+      "Montanha",
+      "Pântano",
       "Underdark",
-      "Urban"
+      "Urbano"
     ]
   },
   {
-    "name": "Tiger",
-    "img": "https://static.wikia.nocookie.net/rythiae/images/7/71/Dire_Tiger.jpg/revision/latest?cb=20141027094513",
-    "size": "Large",
+    "name": "Tigre",
+    "img": "https://static.wikia.nocookie.net/rythiae/images/7/71/Dire_Tiger.jpg",
+    "size": "Grande",
     "hp": 37,
     "roll": "5d10 + 10",
     "ac": 12,
@@ -2939,37 +2941,37 @@ const beasts = [
     "int": 3,
     "wis": 12,
     "cha": 8,
-    "skills": "Perception +3, Stealth +6",
-    "senses": "Darkvision 60 ft.",
+    "skills": "Percepção +3, Furtividade +6",
+    "senses": "Visão no escuro 60 ft.",
     "passive": 13,
     "cr": "1 ",
     "traits": [
       {
-        "name": "Keen Smell",
-        "text": "The tiger has advantage on Wisdom (Perception) checks that rely on smell."
+        "name": "Faro aguçado",
+        "text": "O tigre tem vantagem em testes de Sabedoria (Percepção) relacionados ao olfato"
       },
       {
-        "name": "Pounce",
-        "text": "If the tiger moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action."
+        "name": "Bote",
+        "text": "Se o tigre se mover, pelo menos, 20 ft.  em linha reta em direção de um alvo logo antes de atingi-lo com seu ataque de garra, o alvo deve ser bem sucedido num teste de resistência de Força DC13 para não cair no chão. Se o alvo cair no chão, o tigre poderá realizar uma ação bônus para realizar um ataque de mordida contra ele."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage.",
-        "attack": "Bite|5|1d10+3"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 8 (1d10 + 3) de dano perfurante.",
+        "attack": "Mordida|5|1d10+3"
       },
       {
-        "name": "Claw",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage."
+        "name": "Garra",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., um alvo. Acerto: 7 (1d8 + 3) dano cortante."
       }
     ],
-    "environments": ["Forest", "Grassland"]
+    "environments": ["Floresta", "Prado"]
   },
   {
-    "name": "Triceratops",
+    "name": "Tricerátops",
     "img": "https://images.dinosaurpictures.org/torosaurus-latus-a-prehistoric-era-sergey-krasovskiy_1aa6.jpg",
-    "size": "Huge",
+    "size": "Enorme",
     "hp": 95,
     "roll": "10d12 + 30",
     "ac": 13,
@@ -2984,28 +2986,28 @@ const beasts = [
     "cr": "5 ",
     "traits": [
       {
-        "name": "Trampling Charge",
-        "text": "If the triceratops moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the triceratops can make one stomp attack against it as a bonus action."
+        "name": "Investida Esmagadora",
+        "text": "Se o tricerátops se mover, 20 ft.  em linha reta até uma criatura e então atingi-la com um ataque de chifres no mesmo turno, o alvo deve ser bem sucedido num teste de resistência de Força DC13 para não cair no chão. Se o alvo cair no chão, o tricerátops pode realizar um ataque de pisotear contra ele, com uma ação bônus."
       }
     ],
     "actions": [
       {
-        "name": "Gore",
-        "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 24 (4d8 + 6) piercing damage.",
-        "attack": "Gore|9|4d8+6"
+        "name": "Presas",
+        "text": "Ataque corpo-a-corpo com arma: +9 para atingir, alcance 5 ft., um alvo. Acerto: 24 (4d8 + 6) de dano perfurante.",
+        "attack": "Presas|9|4d8+6"
       },
       {
-        "name": "Stomp",
-        "text": "Melee Weapon Attack: +9 to hit, reach 5 ft., one prone creature. Hit: 22 (3d10 + 6) bludgeoning damage",
-        "attack": "Stomp|9|3d10+6"
+        "name": "Pisotear",
+        "text": "Ataque corpo-a-corpo com arma: +9 para atingir, alcance 5 ft., one prone creature. Acerto: 22 (3d10 + 6) dano de concussão",
+        "attack": "Pisotear|9|3d10+6"
       }
     ],
-    "environments": ["Grassland"]
+    "environments": ["Prado"]
   },
   {
-    "name": "Vulture",
+    "name": "Abutre",
     "img": "https://i.pinimg.com/originals/02/6d/2f/026d2ff39a89768ec17b71116fab3cc8.png",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 5,
     "roll": "1d8 + 1",
     "ac": 10,
@@ -3017,32 +3019,32 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 4,
-    "skills": "Perception +3",
+    "skills": "Percepção +3",
     "passive": 13,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Keen Sight and Smell",
-        "text": "The vulture has advantage on Wisdom (Perception) checks that rely on sight or smell."
+        "name": "Visão e Faro aguçados",
+        "text": "O abutre tem vantagem em testes de Sabedoria (Percepção) relacionados à visão e ao olfato."
       },
       {
-        "name": "Pack Tactics",
-        "text": "The vulture has advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+        "name": "Táticas de grupo",
+        "text": "O abutre tem vantagem nas jogadas de ataque contra uma criatura se, pelo menos, um dos aliados do abutre estiver a 5ft da criaturas e não estiver incapacitado."
       }
     ],
     "actions": [
       {
-        "name": "Beak",
-        "text": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.",
-        "attack": "Beak|2|1d4"
+        "name": "Bicada",
+        "text": "Ataque corpo-a-corpo com arma: +2 para atingir, alcance 5 ft., um alvo. Acerto: 2 (1d4) de dano perfurante.",
+        "attack": "Bicada|2|1d4"
       }
     ],
-    "environments": ["Desert", "Grassland", "Hill"]
+    "environments": ["Deserto", "Prado", "Colina"]
   },
   {
-    "name": "Warhorse",
+    "name": "Cavalo de Guerra",
     "img": "https://angrygolem-games.com/wp-content/uploads/2021/11/Warhorse.jpg",
-    "size": "Large",
+    "size": "Grande",
     "hp": 19,
     "roll": "3d10 + 3",
     "ac": 11,
@@ -3057,23 +3059,23 @@ const beasts = [
     "cr": "1/2",
     "traits": [
       {
-        "name": "Trampling Charge",
-        "text": "If the horse moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action."
+        "name": "Investida Esmagadora",
+        "text": " Se o cavalo se mover, pelo menos, 20 ft. em linha reta em direção de um alvo logo antes de atingi-lo com seu ataque de cascos, o alvo deve ser bem sucedido num teste de resistência de Força DC14 para não cair no chão. Se o alvo cair no chão, o cavalo poderá realizar uma ação bônus para realizar outro ataque de cascos contra ele."
       }
     ],
     "actions": [
       {
-        "name": "Hooves",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
+        "name": "Cascos",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 11 (2d6 + 4) dano de concussão.",
         "attack": "|4|2d6+4"
       }
     ],
-    "environments": ["Urban"]
+    "environments": ["Urbano"]
   },
   {
-    "name": "Weasel",
+    "name": "Arminho",
     "img": "https://www.kryxrpg.com/static/a3295959eba1c63c1b3fd3ab3467114e/53c9b/weasel.png",
-    "size": "Tiny",
+    "size": "Miúda",
     "hp": 1,
     "roll": "1d4-1",
     "ac": 13,
@@ -3084,28 +3086,28 @@ const beasts = [
     "int": 2,
     "wis": 12,
     "cha": 3,
-    "skills": "Perception +3, Stealth +5",
+    "skills": "Percepção +3, Furtividade +5",
     "passive": 13,
     "cr": "0 ",
     "traits": [
       {
-        "name": "Keen Hearing and Smell",
-        "text": "The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+        "name": "Audição e Faro aguçados",
+        "text": "O arminho tem vantagem em testes de Sabedoria (Percepção) relacionados à audição e ao olfato."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.",
-        "attack": "Bite|5|1"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +5 para atingir, alcance 5 ft., uma criatura. Acerto: 1 de dano perfurante.",
+        "attack": "Mordida|5|1"
       }
     ],
     "environments": []
   },
   {
-    "name": "Wolf",
+    "name": "Lobo",
     "img": "https://i.pinimg.com/736x/03/5c/03/035c0395f48db185b97f7d3ba5ac7c59.jpg",
-    "size": "Medium",
+    "size": "Médio",
     "hp": 11,
     "roll": "2d8 + 2",
     "ac": 13,
@@ -3116,33 +3118,33 @@ const beasts = [
     "int": 3,
     "wis": 12,
     "cha": 6,
-    "skills": "Perception +3, Stealth +4",
+    "skills": "Percepção +3, Furtividade +4",
     "passive": 13,
     "cr": "1/4",
     "traits": [
       {
-        "name": "Keen Hearing and Smell",
-        "text": "The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+        "name": "Audição e Faro aguçados",
+        "text": "O lobo tem vantagem em testes de Sabedoria (Percepção) relacionados à audição e ao olfato."
       },
       {
-        "name": "Pack Tactics",
-        "text": "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+        "name": "Táticas de grupo",
+        "text": "O lobo tem vantagem nas jogadas de ataque contra uma criatura se, pelo menos, um dos aliados do lobo estiver a 5ft da criaturas e não estiver incapacitado."
       }
     ],
     "actions": [
       {
-        "name": "Bite",
-        "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
-        "attack": "Bite|4|2d4+2"
+        "name": "Mordida",
+        "text": "Ataque corpo-a-corpo com arma: +4 para atingir, alcance 5 ft., um alvo. Acerto: 7 (2d4 + 2) de dano perfurante.  Se o alvo for uma criatura, ela deve ser bem sucedida num teste de resistência de DC 11 ou será derrubada no chão.",
+        "attack": "Mordida|4|2d4+2"
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill"]
+    "environments": ["Floresta", "Prado", "Colina"]
   },
   {
-    "name": "Air Elemental",
+    "name": "Elemental de Ar",
     "img": "https://www.dndbeyond.com/avatars/thumbnails/30783/689/1000/1000/638062015555039371.png",
     "type": "elemental",
-    "size": "Large",
+    "size": "Grande",
     "hp": 90,
     "roll": "12d10 + 24",
     "ac": 15,
@@ -3155,40 +3157,40 @@ const beasts = [
     "int": 6,
     "wis": 10,
     "cha": 6,
-    "resistances": "Lightning, Thunder; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
-    "immunities": "Poison",
-    "conditionImmunities": "Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
-    "senses": "Darkvision 60ft.",
+    "resistances": "Elétrico, Trovejante; Concussão, Perfurante, e Cortante de ataques não-mágicos",
+    "immunities": "Veneno",
+    "conditionImmunities": "Exausto, Agarrado, Paralizado, Petrificado, Envenenado, Caído, Impedido, Inconsciente",
+    "senses": "Visão no escuro 60ft.",
     "passive": 10,
     "languages": "Auran",
     "cr": "5 ",
     "traits": [
       {
         "name": "Air Form",
-        "text": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+        "text": "O elemental pode entrar no espaço de uma criatura hostil e ficar parado nele. Ele pode se mover através de um espaço de até 1 inch de espessura sem se espremer."
       }
     ],
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The elemental makes two slam attacks."
+        "name": "Ataques múltiplos",
+        "text": "O elemental realiza dois ataques de pancada."
       },
       {
-        "name": "Slam",
-        "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+        "name": "Pancada",
+        "text": "Ataque corpo-a-corpo com arma: +8 para atingir, alcance 5 ft., um alvo. Acerto: 14 (2d8 + 5) dano de concussão."
       },
       {
-        "name": "Whirlwind (Recharge 4-6)",
-        "text": "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\n\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone."
+        "name": "Vendaval (Recarga 4-6)",
+        "text": "Cada criatura no espaço do elemental deve realizar um teste de resistência de Força DC 13  Se falhar, um alvo sofre 15 (3d8 + 2) de dano de concussão e é arremessado a até 6 metros do elemental em uma direção aleatória e cai no chão. Se um alvo arremessado atingir um objeto, como uma parede ou solo, ele sofre 3 (1d6) de dano de concussão para cada 3 metros que ele percorreu. Se o alvo for arremessado em outra criatura, a criatura deve ser bem sucedida num teste de Destreza DC13 ou sofrerá a mesma quantidade de dano e cairá no chão. Se o teste de resistência for bem sucedido, o alvo sofre metade do dano de concussão e não é arremessado ou fica caído no chão."
       }
     ],
-    "environments": ["Desert", "Mountain"]
+    "environments": ["Deserto", "Montanha"]
   },
   {
-    "name": "Earth Elemental",
+    "name": "Elemental de Terra",
     "img": "https://www.dndbeyond.com/avatars/thumbnails/30783/692/1000/1000/638062015664899420.png",
     "type": "elemental",
-    "size": "Large",
+    "size": "Grande",
     "hp": 126,
     "roll": "12d10 + 60",
     "ac": 17,
@@ -3200,41 +3202,41 @@ const beasts = [
     "int": 5,
     "wis": 10,
     "cha": 5,
-    "vulnerabilities": "Thunder",
-    "resistances": "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
-    "immunities": "Poison",
-    "conditionImmunities": "Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious",
-    "senses": "Darkvision 60 ft., Tremorsense 60 ft",
+    "vulnerabilities": "Trovejante",
+    "resistances": "Concussão, Perfurante, e Cortante de ataques não-mágicos",
+    "immunities": "Veneno",
+    "conditionImmunities": "Exausto, Paralizado, Petrificado, Envenenado, Inconsciente",
+    "senses": "Visão no escuro 60 ft., Tremorsense 60 ft",
     "passive": 10,
     "languages": "Terran",
     "cr": "5 ",
     "traits": [
       {
-        "name": "Earth Glide",
-        "text": "The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through."
+        "name": "Deslizar na Terra",
+        "text": "O elemental pode escavar através de terra e rocha não-mágica bruta. Enquanto faz isso, o elemental não perturba o material pelo qual se move."
       },
       {
-        "name": "Siege Monster",
-        "text": "The elemental deals double damage to objects and structures."
+        "name": "Monstro de Cerco",
+        "text": "O elemental causa o dobro do dano a objetos e estruturas."
       }
     ],
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The elemental makes two slam attacks."
+        "name": "Ataques múltiplos",
+        "text": "O elemental realiza dois ataques de pancada."
       },
       {
-        "name": "Slam",
-        "text": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+        "name": "Pancada",
+        "text": "Ataque corpo-a-corpo com arma: +8 para atingir, alcance 10 ft., um alvo. Acerto: 14 (2d8 + 5) dano de concussão."
       }
     ],
     "environments": ["Underdark"]
   },
   {
-    "name": "Fire Elemental",
+    "name": "Elemental do Fogo",
     "img": "https://www.dndbeyond.com/avatars/thumbnails/30783/695/1000/1000/638062015772259390.png",
     "type": "elemental",
-    "size": "Large",
+    "size": "Grande",
     "hp": 102,
     "roll": "12d10 + 36",
     "ac": 13,
@@ -3245,44 +3247,44 @@ const beasts = [
     "int": 6,
     "wis": 10,
     "cha": 7,
-    "resistances": "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
-    "immunities": "Fire, Poison",
-    "conditionImmunities": "Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
-    "senses": "Darkvision 60 ft.",
+    "resistances": "Concussão, Perfurante, e Cortante de ataques não-mágicos",
+    "immunities": "Fogo, Veneno",
+    "conditionImmunities": "Exausto, Agarrado, Paralizado, Petrificado, Envenenado, Caído, Impedido, Inconsciente",
+    "senses": "Visão no escuro 60 ft.",
     "passive": 10,
     "languages": "Ignan",
     "cr": "5 ",
     "traits": [
       {
-        "name": "Fire Form",
-        "text": "The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage. In addition, the elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns."
+        "name": "Forma de Fogo",
+        "text": "The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage. In addition, the elemental can enter a hostile creature's space e stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) fire damage e catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns."
       },
       {
-        "name": "Illumination",
-        "text": "The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet."
+        "name": "Iluminação",
+        "text": "O elemental emite luz plena num raio de 9 metros e penumbra a 9 metros adicionais"
       },
       {
-        "name": "Water Susceptibility",
-        "text": "For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage."
+        "name": "Susceptibilidade à Água",
+        "text": "Para cada 5 ft que o elemental se mova na água, ou para cada 4 litros de água jogados nele, ele sofre 1 de dano de frio."
       }
     ],
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The elemental makes two touch attacks."
+        "name": "Ataques múltiplos",
+        "text": "O elemental realiza dois ataques de toque."
       },
       {
-        "name": "Touch",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns."
+        "name": "Toque",
+        "text": "Ataque corpo-a-corpo com arma: +6 para atingir, alcance 5 ft., um alvo. Acerto: 10 (2d6 + 3) de dano de fogo. Se o alvo for uma criatura ou objeto inflamável, ele se incendeia. Até que uma criatura use uma ação para extinguir o fogo, a criatura sofre 5 (1d10) de dano de fogo no início de cada um dos turnos dela."
       }
     ],
-    "environments": ["Desert"]
+    "environments": ["Deserto"]
   },
   {
-    "name": "Water Elemental",
+    "name": "Elemental da Água",
     "img": "https://www.dndbeyond.com/avatars/thumbnails/30783/698/1000/1000/638062015886859442.png",
     "type": "elemental",
-    "size": "Large",
+    "size": "Grande",
     "hp": 114,
     "roll": "12d10 + 48",
     "ac": 14,
@@ -3294,38 +3296,38 @@ const beasts = [
     "int": 5,
     "wis": 10,
     "cha": 8,
-    "resistances": "Acid; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
-    "immunities": "Poison",
-    "conditionImmunities": "Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
-    "senses": "Darkvision 60 ft.",
+    "resistances": "Ácido; Concussão, Perfurante, e Cortante de ataques não-mágicos",
+    "immunities": "Veneno",
+    "conditionImmunities": "Exausto, Agarrado, Paralizado, Petrificado, Envenenado, Caído, Impedido, Inconsciente",
+    "senses": "Visão no escuro 60 ft.",
     "passive": 10,
     "languages": "Aquan",
     "cr": "5 ",
     "traits": [
       {
-        "name": "Water Form",
-        "text": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+        "name": "Forma de Água",
+        "text": "O elemental pode entrar no espaço de uma criatura hostil e ficar parado nele. Ele pode se mover através de um espaço de até 1 inch de espessura sem se espremer.."
       },
       {
-        "name": "Freeze",
-        "text": "If the elemental takes cold damage, it partially freezes; its speed is reduced by 20 feet until the end of its next turn."
+        "name": "Congelar",
+        "text": "Se o elemental sofrer dano de frio, ele congela parcialmente; seu deslocamento é reduzido em 20 ft até o final do seu próximo turno."
       }
     ],
     "actions": [
       {
-        "name": "Multiattack",
-        "text": "The elemental makes two slam attacks."
+        "name": "Ataques múltiplos",
+        "text": "O elemental realiza dois ataques de pancada."
       },
       {
-        "name": "Slam",
-        "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
+        "name": "Pancada",
+        "text": "Ataque corpo-a-corpo com arma: +7 para atingir, alcance 5 ft., um alvo. Acerto: 13 (2d8 + 4) dano de concussão."
       },
       {
-        "name": "Whelm (Recharge 4–6)",
-        "text": "Each creature in the elemental's space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8 + 4) bludgeoning damage. If it is Large or smaller, it is also grappled (escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space.\n\nThe elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 13 (2d8 + 4) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength and succeeding."
+        "name": "Engolfar (Recarrega 4–6)",
+        "text": "Cada criatura no espaço do elemental deve realizar um teste de resistência de Força CD 15. Se falhar, um alvo sofre 13 (2d8 + 4) de dano de concussão. Caso ele seja Grande ou menor, ele também fica agarrado (CD 14 para escapar). Até o agarrão acabar, o alvo fica impedido e incapaz de respirar a não ser que possa respirar na água. Se o teste de resistência for bem sucedido, o alvo é empurrado para fora do espaço do elemental. O elemental pode agarrar uma criatura Grande ou duas Médias ou menores ao mesmo tempo. No início de cada turno do elemental, cada criatura agarrada por ele sofre 13 (2d8 + 4) de dano de concussão. Uma criatura a até 1,5 metro do elemental pode puxar uma criatura ou objeto para fora dele ao usar uma ação para realizar um teste de Força CD 14 bem sucedido."
       }
     ],
-    "environments": ["Coastal", "Swamp", "Underwater"]
+    "environments": ["Coastal", "Pântano", "Underwater"]
   }
 ]
 

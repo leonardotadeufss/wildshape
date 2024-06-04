@@ -6,7 +6,7 @@ interface propType {
 export default function Card({ beast }: propType) {
     const url = beast.name.replace(' ', '_')
     return (
-        <a className="text-decoration-none" href={`/${url}`}>
+        <a className="text-decoration-none" href={`/${url}`} key={url}>
             <div className="card my-3 text-center" style={{ height: "400px" }}>
                 <div className="card-body">
                     <div className="card-img d-flex justify-content-center align-items-center" style={{ width: "100%", height: "250px" }}>
@@ -18,7 +18,7 @@ export default function Card({ beast }: propType) {
 
                         {beast.traits?.map(trait => {
                             return (
-                                <div key={trait.name + beast.name} className="badge text-bg-primary">{trait.name}</div>
+                                <div key={trait.name + beast.name.replace(' ', "_")} className="badge text-bg-primary">{trait.name}</div>
                             )
                         })}
                     </div>

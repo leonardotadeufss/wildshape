@@ -4,7 +4,7 @@ import Abilities from "src/components/Abilities"
 import Attributes from "src/components/Attributes"
 import Stats from "src/components/Stats"
 import TraitsAndActions from "src/components/TraitsAndActions"
-import beasts from "src/data/beasts"
+import beasts from "src/data/pt-br"
 import Beast from "src/types/types"
 
 export default function Page({ params }: { params: { slug: string } }) {
